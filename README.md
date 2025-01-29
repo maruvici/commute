@@ -10,10 +10,10 @@ This guide was copied from Smartlight group's github repo.
 The repository is already reorganized so that the changes we make with the codes are reflected only in a single source.
 
 Steps:  
-0. Have Git installed
+0. Have Git installed  
 1. Clone the Repository
     Once repository is cloned, open the directory on your IDE.
-2. Whenever you make changes to the files in the repo do the following:
+2. Whenever you make changes to the files in the repo do the following:  
     git add .
     git commit -m "insert message here, describe the changes you are making"
     git push
