@@ -7,7 +7,6 @@ class Source:
     def __init__(self, source_name, possible_routes):
         self.source_name = source_name
         self.possible_routes = possible_routes
-        
     def getSourceName(self):
         return self.source_name
     def getPossibleRoutes(self):
@@ -139,7 +138,11 @@ source_demand_dict_wholeday = {
     }
     
 intermediate_demand_dict_wholeday = {
+        'ka-1ab_to_ka-4': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        'ka-1ab_to_ka-5a': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        'ka-1ab_to_ka-6': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         'ka-4': [1930, 2169, 2099, 1735, 1598, 1499, 1465, 1631, 1648, 1966, 2057, 2253, 2043, 1826],
+        'ka-4ab': [291, 327, 316, 261, 241, 226, 221, 246, 248, 296, 310, 339, 308, 275],
         'ka-4ab_to_kuf-2': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         'ka-4ab_to_kuf-3': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         'ka-4ab_to_kuf-3a': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -158,6 +161,24 @@ intermediate_demand_dict_wholeday = {
         'kbt-3': [39, 44, 43, 35, 32, 30, 30, 33, 34, 40, 42, 46, 42, 37]
     }
 
+# split demand from ka-1ab to both ka-4, ka-5a, and ka-6
+for idx in range(14):
+    x = random.randint(0,source_demand_dict_wholeday['ka-1ab'][idx])
+    y = random.randint(0,source_demand_dict_wholeday['ka-1ab'][idx] - x)
+    z = source_demand_dict_wholeday['ka-1ab'][idx] - x - y
+    intermediate_demand_dict_wholeday['ka-1ab_to_ka-4'][idx] = x
+    intermediate_demand_dict_wholeday['ka-1ab_to_ka-5a'][idx] = y
+    intermediate_demand_dict_wholeday['ka-1ab_to_ka-6'][idx] = z
+
+# split demand from ka-4ab to both kuf-2, kuf-3, and kuf-3a
+for idx in range(14):
+    x = random.randint(0,intermediate_demand_dict_wholeday['ka-4ab'][idx])
+    y = random.randint(0,intermediate_demand_dict_wholeday['ka-4ab'][idx] - x)
+    z = intermediate_demand_dict_wholeday['ka-4ab'][idx] - x - y
+    intermediate_demand_dict_wholeday['ka-4ab_to_kuf-2'][idx] = x
+    intermediate_demand_dict_wholeday['ka-4ab_to_kuf-3'][idx] = y
+    intermediate_demand_dict_wholeday['ka-4ab_to_kuf-3a'][idx] = z
+
 # split demand from kuf-4a to both kbt-2 and kbt-3
 for idx in range(14):
     x = random.randint(0,intermediate_demand_dict_wholeday['kuf-4a'][idx])
@@ -169,37 +190,37 @@ for idx in range(14):
 
 #KA
 ka1 = Source("ka-1", [])
-ka1ab = Source("ka-1ab", [])
-ka2a = Source("ka-2a", []) # edit this later
+ka1ab = Source("ka-1ab", ["ka-1ab_to_ka-4", "ka-1ab_to_ka-5a", "ka-1ab_to_ka-6"])
+ka2a = Source("ka-2a", ["kuf-2", "kuf-3", "kuf-3a"]) 
 ka3 = Source("ka-3", [])
 ka8 = Source ("ka-8", [])
 ka9 = Source ("ka-9", [])
 ka10 = Source("ka-10", [])
 ka11 = Source("ka-11", [])
-ka12 = Source("ka-12", []) # edit this later
+ka12 = Source("ka-12", ["kuf-2", "kuf-3", "kuf-3a"])
 
 #KX
 #kx9 = Source("kx-9", []) # disregarded for now
 
 #KUF
-kuf7 = Source("kuf-7", []) # edit this later
+kuf7 = Source("kuf-7", ["kbt-2", "kbt-3"]) 
 kuf8 = Source("kuf-8", [])
 kuf8a = Source("kuf-8a", [])
-kuf9 = Source("kuf-9", []) # edit this later
-kuf10b = Source("kuf-10b", []) # edit this later
-kuf10c = Source("kuf-10c", []) # edit this later
-kuf12a = Source("kuf-12a", []) # edit this later
+kuf9 = Source("kuf-9", ["kuf-4", "kuf-4ab_to_kuf-2", "kuf-4ab_to_kuf-3", "kuf-4ab_to_kuf-3a", "ka-5a", "ka-6"])
+kuf10b = Source("kuf-10b", ["kuf-4", "kuf-4ab_to_kuf-2", "kuf-4ab_to_kuf-3", "kuf-4ab_to_kuf-3a", "ka-5a", "ka-6"]) 
+kuf10c = Source("kuf-10c", ["kuf-4", "kuf-4ab_to_kuf-2", "kuf-4ab_to_kuf-3", "kuf-4ab_to_kuf-3a", "ka-5a", "ka-6"]) 
+kuf12a = Source("kuf-12a", ["kbt-2", "kbt-3"]) 
 
 #KBT
 kbt4 = Source("kbt-4",[])
 kbt4a = Source("kbt-4a",[])
-kbt5 = Source("kbt-5",[]) # edit this later
+kbt5 = Source("kbt-5",["kuf-4", "kuf-4a_to_kbt-2", "kuf-4a_to_kbt-3", "kuf-4b", "kuf-5"])
 kbt6 = Source("kbt-6", []) 
 kbt7 = Source("kbt-7",[])
 kbt8 = Source("kbt-8",[])
-kbt9 = Source("kbt-9",[]) # edit this later
-kbt10 = Source("kbt-10", []) # edit this later
-kbt11 = Source("kbt-11", [])
+kbt9 = Source("kbt-9",["kuf-4", "kuf-4a_to_kbt-2", "kuf-4a_to_kbt-3", "kuf-4b", "kuf-5"]) 
+kbt10 = Source("kbt-10",["kuf-4", "kuf-4a_to_kbt-2", "kuf-4a_to_kbt-3", "kuf-4b", "kuf-5"]) 
+kbt11 = Source("kbt-11",[])
 kbt12 = Source("kbt-12",[])
 
 sources = [ka1, ka1ab, ka3, ka8, ka9, ka10, ka11, ka12, kuf7, kuf8, kuf8a, kuf9, kuf10b, kuf10c, kuf12a, kbt4, kbt4a, kbt5, kbt6, kbt7, kbt8, kbt9, kbt10, kbt11, kbt12]
@@ -207,20 +228,24 @@ sources = [ka1, ka1ab, ka3, ka8, ka9, ka10, ka11, ka12, kuf7, kuf8, kuf8a, kuf9,
 #Intermediate nodes
 
 #KA
-ka4 = Intermediate("kuf-4",[])
-ka4ab_kuf2 = Intermediate("kuf-4ab_to_kuf-2", []) #edit this later
-ka4ab_kuf3 = Intermediate("kuf-4ab_to_kuf-3",[]) #edit this later
-ka4ab_kuf3a = Intermediate("ka-4ab_to_kuf-3a", []) #edit this later
-ka5a = Intermediate("ka-5a", [])
-ka6 = Intermediate("ka-6",[])
+ka1ab_ka4 = Intermediate("ka-1ab_to_ka-4", ["ka-1ab"]) #might need revision
+ka1ab_ka5a = Intermediate("ka-1ab_to_ka-5a", ["ka-1ab"]) #might need revision
+ka1ab_ka6 = Intermediate("ka-1ab_to_ka-6", ["ka-1ab"]) #might need revision
+#might need revision (kuf-5 is an intermediate)
+ka4 = Intermediate("kuf-4",["kuf-5", "kuf-9", "kuf-10b", "kuf-10c"]) 
+ka4ab_kuf2 = Intermediate("kuf-4ab_to_kuf-2", ["kuf-5", "kuf-9", "kuf-10b", "kuf-10c"]) 
+ka4ab_kuf3 = Intermediate("kuf-4ab_to_kuf-3",["kuf-5", "kuf-9", "kuf-10b", "kuf-10c"]) 
+ka4ab_kuf3a = Intermediate("ka-4ab_to_kuf-3a", ["kuf-5", "kuf-9", "kuf-10b", "kuf-10c"]) 
+ka5a = Intermediate("ka-5a", ["kuf-5", "kuf-9", "kuf-10b", "kuf-10c"])
+ka6 = Intermediate("ka-6",["kuf-5", "kuf-9", "kuf-10b", "kuf-10c"])
 
 #KX
 #kx6 = Intermediate("kx-6", []) #disregarded for now
 
 #KUF
-kuf2 = Intermediate("kuf-2",[]) # edit this later
-kuf3 = Intermediate("kuf-3",[]) # edit this later
-kuf3a = Intermediate("kuf-3a",[]) # edit this later
+kuf2 = Intermediate("kuf-2",["ka-2a", "ka-12", "kuf-4ab_to_kuf-2"]) 
+kuf3 = Intermediate("kuf-3",["ka-2a", "ka-12", "kuf-4ab_to_kuf-3"]) 
+kuf3a = Intermediate("kuf-3a",["ka-2a", "ka-12", "kuf-4ab_to_kuf-3a"]) 
 kuf4 = Intermediate("kuf-4",["kbt-5","kbt-9","kbt-10"])
 kuf4a_kbt2 = Intermediate("kuf-4a_to_kbt-2", ["kbt-5","kbt-9","kbt-10"])
 kuf4a_kbt3 = Intermediate("kuf-4a_to_kbt-3", ["kbt-5","kbt-9","kbt-10"])
@@ -228,10 +253,10 @@ kuf4b = Intermediate("kuf-4b", ["kbt-5","kbt-9","kbt-10"])
 kuf5 = Intermediate("kuf-5", ["kbt-5","kbt-9","kbt-10"])
 
 #KBT
-kbt2 = Intermediate("kbt-2",[]) # edit this later
-kbt3 = Intermediate("kbt-3",[]) # edit this later
+kbt2 = Intermediate("kbt-2",["kuf-2", "kuf-7", "kuf-12a", "kuf-4a_to_kbt-2"])
+kbt3 = Intermediate("kbt-3",["kuf-2", "kuf-7", "kuf-12a", "kuf-4a_to_kbt-3"]) 
 
-intermediates = [ka4, ka4ab_kuf2, ka4ab_kuf3, ka4ab_kuf3a, ka5a, ka6, kuf2, kuf3, kuf3a, kuf4, kuf4a_kbt2, kuf4a_kbt3, kuf4b, kuf5, kbt2, kbt3]
+intermediates = [ka1ab_ka4, ka1ab_ka5a, ka1ab_ka6, ka4, ka4ab_kuf2, ka4ab_kuf3, ka4ab_kuf3a, ka5a, ka6, kuf2, kuf3, kuf3a, kuf4, kuf4a_kbt2, kuf4a_kbt3, kuf4b, kuf5, kbt2, kbt3]
 
 route_dict = {}
 route_name_list=[]
@@ -261,6 +286,6 @@ for idx in range(14):
    print(route_dict)
    print(sum(route_dict.values()))
 
-createXML_wholeday_profiled(route_dict)
-print
+#createXML_wholeday_profiled(route_dict)
+#print
 
