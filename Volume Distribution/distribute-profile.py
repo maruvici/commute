@@ -235,10 +235,10 @@ for idx in range(14):
    print(swank)
 
 
-   createXML_hourly_profiled(route_dict, idx)
-   print(route_dict)
+   #createXML_hourly_profiled(route_dict, idx)
+   #print(route_dict)
    #print(sum(route_dict.values()))
 
-#createXML_wholeday_profiled(route_dict)
+createXML_wholeday_profiled(route_dict)
 #print
 
