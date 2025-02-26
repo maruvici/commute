@@ -111,44 +111,33 @@ def distribute(time_slot):
 
 source_demand_dict_wholeday = {
         'ka-1': [569, 640, 619, 512, 471, 442, 432, 481, 486, 580, 607, 665, 603, 539],
-        'ka-1ab': [485, 545, 527, 436, 401, 377, 368, 410, 414, 494, 517, 566, 513, 459],
-        'ka-3': [3900, 4382, 4241, 3505, 3229, 3030, 2960, 3297, 3330, 3973, 4157, 4553, 4128, 3690], 
         'ka-8': [1963, 2205, 2134, 1764, 1625, 1524, 1489, 1659, 1676, 1999, 2092, 2291, 2077, 1857],
-        'ka-9': [383, 430, 416, 344, 317, 297, 291, 324, 327, 390, 408, 447, 405, 362],
         'ka-10': [767, 862, 834, 689, 635, 596, 582, 648, 655, 781, 817, 895, 812, 726],
         'ka-11': [3153, 3543, 3429, 2833, 2610, 2449, 2392, 2665, 2692, 3211, 3360, 3681, 3337, 2983],
-        'ka-12': [142, 160, 154, 128, 118, 110, 108, 120, 121, 145, 151, 166, 150, 134],
-        'kuf-7': [139, 156, 151, 125, 115, 108, 106, 118, 119, 142, 148, 163, 147, 132],
+        'ka-12': [4295, 4826, 4671, 3860, 3556, 3336, 3259, 3630, 3667, 4375, 4578, 5014, 4545, 4064],
+        'kuf-7': [181, 203, 197, 163, 150, 141, 137, 153, 155, 184, 193, 211, 192, 171],
         'kuf-8': [107, 120, 116, 96, 88, 83, 81, 90, 91, 109, 114, 125, 113, 101], 
         'kuf-8a': [104, 117, 113, 94, 86, 81, 79, 88, 89, 106, 111, 122, 110, 99], 
-        'kuf-9': [84, 94, 91, 75, 69, 65, 64, 71, 72, 85, 89, 98, 89, 79],
-        'kuf-10b': [210, 236, 228, 189, 174, 163, 159, 177, 179, 214, 224, 245, 222, 199], 
-        'kuf-10c': [826, 928, 898, 742, 684, 642, 627, 698, 705, 841, 880, 964, 874, 781], 
+        'kuf-9': [109, 122, 118, 98, 90, 85, 83, 92, 93, 111, 116, 127, 115, 103],
+        'kuf-10b': [273, 307, 297, 245, 226, 212, 207, 231, 233, 278, 291, 319, 289, 258], 
+        'kuf-10c': [696, 782, 757, 625, 576, 540, 528, 588, 594, 709, 742, 812, 736, 658], 
         'kuf-12a': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 
         'kbt-4': [49, 55, 53, 44, 41, 38, 37, 41, 42, 50, 52, 57, 52, 46], 
         'kbt-4a': [451, 507, 490, 405, 373, 350, 342, 381, 385, 459, 481, 526, 477, 427], 
-        'kbt-5': [5425, 6095, 5899, 4875, 4491, 4214, 4117, 4585, 4632, 5525, 5782, 6333, 5741, 5133], 
+        'kbt-5': [5137, 5772, 5586, 4616, 4253, 3990, 3898, 4342, 4386, 5232, 5475, 5997, 5436, 4860], 
         'kbt-6': [622, 699, 676, 559, 515, 483, 472, 525, 531, 633, 663, 726, 658, 588], 
         'kbt-7': [679, 763, 739, 610, 562, 528, 515, 574, 580, 692, 724, 793, 719, 643], 
         'kbt-8': [14, 16, 15, 13, 12, 11, 11, 12, 12, 14, 15, 17, 15, 13], 
-        'kbt-9': [26, 29, 28, 23, 21, 20, 19, 22, 22, 26, 27, 30, 27, 24], 
-        'kbt-10': [106, 119, 115, 95, 88, 82, 80, 89, 90, 108, 113, 124, 112, 100], 
+        'kbt-9': [33, 37, 36, 30, 28, 26, 25, 28, 28, 34, 35, 39, 35, 31], 
+        'kbt-10': [138, 155, 150, 124, 114, 107, 104, 116, 117, 140, 147, 161, 146, 130], 
         'kbt-11': [30, 34, 32, 27, 25, 23, 23, 25, 25, 30, 32, 35, 32, 28], 
         'kbt-12': [11, 12, 12, 10, 9, 9, 8, 9, 9, 11, 12, 13, 12, 10]
     }
     
 intermediate_demand_dict_wholeday = {
-        'ka-1ab_to_ka-4': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        'ka-1ab_to_ka-5a': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        'ka-1ab_to_ka-6': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        'ka-4': [1930, 2169, 2099, 1735, 1598, 1499, 1465, 1631, 1648, 1966, 2057, 2253, 2043, 1826],
-        'ka-4ab': [291, 327, 316, 261, 241, 226, 221, 246, 248, 296, 310, 339, 308, 275],
-        'ka-4ab_to_kuf-2': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        'ka-4ab_to_kuf-3': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        'ka-4ab_to_kuf-3a': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        'ka-5a': [3917, 4401, 4259, 3520, 3243, 3042, 2972, 3310, 3344, 3989, 4175, 4572, 4145, 3706],
+        'ka-4': [5847, 6570, 6358, 5255, 4840, 4542, 4437, 4942, 4992, 5955, 6232, 6826, 6188, 5532],
         'ka-6': [271, 304, 294, 243, 224, 210, 205, 229, 231, 276, 289, 316, 286, 256],
-        'kuf-2': [4045, 4545, 4399, 3636, 3349, 3142, 3070, 3419, 3454, 4120, 4311, 4722, 4281, 3827],
+        'kuf-2': [4007, 4503, 4358, 3601, 3317, 3113, 3041, 3387, 3421, 4082, 4271, 4678, 4241, 3791],
         'kuf-3': [259, 291, 282, 233, 214, 201, 197, 219, 221, 264, 276, 302, 274, 245],
         'kuf-3a': [29, 32, 31, 26, 24, 22, 22, 24, 25, 29, 31, 34, 30, 27],
         'kuf-4': [142, 160, 155, 128, 118, 111, 108, 120, 122, 145, 152, 166, 151, 135],
@@ -156,28 +145,10 @@ intermediate_demand_dict_wholeday = {
         'kuf-4a_to_kbt-2': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         'kuf-4a_to_kbt-3': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         'kuf-4b': [122, 137, 132, 109, 101, 94, 92, 103, 104, 124, 130, 142, 129, 115],
-        'kuf-5': [5288, 5942, 5751, 4753, 4378, 4108, 4013, 4470, 4515, 5387, 5637, 6174, 5597, 5004],
+        'kuf-5': [5040, 5663, 5481, 4529, 4172, 3915, 3824, 4260, 4303, 5133, 5372, 5883, 5334, 4769],
         'kbt-2': [4149, 4662, 4512, 3729, 3435, 3223, 3148, 3507, 3542, 4226, 4422, 4843, 4391, 3926],
         'kbt-3': [39, 44, 43, 35, 32, 30, 30, 33, 34, 40, 42, 46, 42, 37]
     }
-
-# split demand from ka-1ab to both ka-4, ka-5a, and ka-6
-for idx in range(14):
-    x = random.randint(0,source_demand_dict_wholeday['ka-1ab'][idx])
-    y = random.randint(0,source_demand_dict_wholeday['ka-1ab'][idx] - x)
-    z = source_demand_dict_wholeday['ka-1ab'][idx] - x - y
-    intermediate_demand_dict_wholeday['ka-1ab_to_ka-4'][idx] = x
-    intermediate_demand_dict_wholeday['ka-1ab_to_ka-5a'][idx] = y
-    intermediate_demand_dict_wholeday['ka-1ab_to_ka-6'][idx] = z
-
-# split demand from ka-4ab to both kuf-2, kuf-3, and kuf-3a
-for idx in range(14):
-    x = random.randint(0,intermediate_demand_dict_wholeday['ka-4ab'][idx])
-    y = random.randint(0,intermediate_demand_dict_wholeday['ka-4ab'][idx] - x)
-    z = intermediate_demand_dict_wholeday['ka-4ab'][idx] - x - y
-    intermediate_demand_dict_wholeday['ka-4ab_to_kuf-2'][idx] = x
-    intermediate_demand_dict_wholeday['ka-4ab_to_kuf-3'][idx] = y
-    intermediate_demand_dict_wholeday['ka-4ab_to_kuf-3a'][idx] = z
 
 # split demand from kuf-4a to both kbt-2 and kbt-3
 for idx in range(14):
@@ -190,25 +161,18 @@ for idx in range(14):
 
 #KA
 ka1 = Source("ka-1", [])
-ka1ab = Source("ka-1ab", ["ka-1ab_to_ka-4", "ka-1ab_to_ka-5a", "ka-1ab_to_ka-6"])
-ka2a = Source("ka-2a", ["kuf-2", "kuf-3", "kuf-3a"]) 
-ka3 = Source("ka-3", [])
 ka8 = Source ("ka-8", [])
-ka9 = Source ("ka-9", [])
 ka10 = Source("ka-10", [])
 ka11 = Source("ka-11", [])
 ka12 = Source("ka-12", ["kuf-2", "kuf-3", "kuf-3a"])
-
-#KX
-#kx9 = Source("kx-9", []) # disregarded for now
 
 #KUF
 kuf7 = Source("kuf-7", ["kbt-2", "kbt-3"]) 
 kuf8 = Source("kuf-8", [])
 kuf8a = Source("kuf-8a", [])
-kuf9 = Source("kuf-9", ["kuf-4", "kuf-4ab_to_kuf-2", "kuf-4ab_to_kuf-3", "kuf-4ab_to_kuf-3a", "ka-5a", "ka-6"])
-kuf10b = Source("kuf-10b", ["kuf-4", "kuf-4ab_to_kuf-2", "kuf-4ab_to_kuf-3", "kuf-4ab_to_kuf-3a", "ka-5a", "ka-6"]) 
-kuf10c = Source("kuf-10c", ["kuf-4", "kuf-4ab_to_kuf-2", "kuf-4ab_to_kuf-3", "kuf-4ab_to_kuf-3a", "ka-5a", "ka-6"]) 
+kuf9 = Source("kuf-9", ["ka-4", "ka-6"])
+kuf10b = Source("kuf-10b", ["ka-4", "ka-6"]) 
+kuf10c = Source("kuf-10c", ["ka-4", "ka-6"]) 
 kuf12a = Source("kuf-12a", ["kbt-2", "kbt-3"]) 
 
 #KBT
@@ -223,29 +187,18 @@ kbt10 = Source("kbt-10",["kuf-4", "kuf-4a_to_kbt-2", "kuf-4a_to_kbt-3", "kuf-4b"
 kbt11 = Source("kbt-11",[])
 kbt12 = Source("kbt-12",[])
 
-sources = [ka1, ka1ab, ka3, ka8, ka9, ka10, ka11, ka12, kuf7, kuf8, kuf8a, kuf9, kuf10b, kuf10c, kuf12a, kbt4, kbt4a, kbt5, kbt6, kbt7, kbt8, kbt9, kbt10, kbt11, kbt12]
+sources = [ka1, ka8, ka10, ka11, ka12, kuf7, kuf8, kuf8a, kuf9, kuf10b, kuf10c, kuf12a, kbt4, kbt4a, kbt5, kbt6, kbt7, kbt8, kbt9, kbt10, kbt11, kbt12]
 
 #Intermediate nodes
 
 #KA
-ka1ab_ka4 = Intermediate("ka-1ab_to_ka-4", ["ka-1ab"]) #might need revision
-ka1ab_ka5a = Intermediate("ka-1ab_to_ka-5a", ["ka-1ab"]) #might need revision
-ka1ab_ka6 = Intermediate("ka-1ab_to_ka-6", ["ka-1ab"]) #might need revision
-#might need revision (kuf-5 is an intermediate)
-ka4 = Intermediate("kuf-4",["kuf-5", "kuf-9", "kuf-10b", "kuf-10c"]) 
-ka4ab_kuf2 = Intermediate("kuf-4ab_to_kuf-2", ["kuf-5", "kuf-9", "kuf-10b", "kuf-10c"]) 
-ka4ab_kuf3 = Intermediate("kuf-4ab_to_kuf-3",["kuf-5", "kuf-9", "kuf-10b", "kuf-10c"]) 
-ka4ab_kuf3a = Intermediate("ka-4ab_to_kuf-3a", ["kuf-5", "kuf-9", "kuf-10b", "kuf-10c"]) 
-ka5a = Intermediate("ka-5a", ["kuf-5", "kuf-9", "kuf-10b", "kuf-10c"])
+ka4 = Intermediate("ka-4",["kuf-5", "kuf-9", "kuf-10b", "kuf-10c"]) 
 ka6 = Intermediate("ka-6",["kuf-5", "kuf-9", "kuf-10b", "kuf-10c"])
 
-#KX
-#kx6 = Intermediate("kx-6", []) #disregarded for now
-
 #KUF
-kuf2 = Intermediate("kuf-2",["ka-2a", "ka-12", "kuf-4ab_to_kuf-2"]) 
-kuf3 = Intermediate("kuf-3",["ka-2a", "ka-12", "kuf-4ab_to_kuf-3"]) 
-kuf3a = Intermediate("kuf-3a",["ka-2a", "ka-12", "kuf-4ab_to_kuf-3a"]) 
+kuf2 = Intermediate("kuf-2",["ka-12"]) 
+kuf3 = Intermediate("kuf-3",["ka-12"]) 
+kuf3a = Intermediate("kuf-3a",["ka-12"]) 
 kuf4 = Intermediate("kuf-4",["kbt-5","kbt-9","kbt-10"])
 kuf4a_kbt2 = Intermediate("kuf-4a_to_kbt-2", ["kbt-5","kbt-9","kbt-10"])
 kuf4a_kbt3 = Intermediate("kuf-4a_to_kbt-3", ["kbt-5","kbt-9","kbt-10"])
@@ -256,7 +209,7 @@ kuf5 = Intermediate("kuf-5", ["kbt-5","kbt-9","kbt-10"])
 kbt2 = Intermediate("kbt-2",["kuf-2", "kuf-7", "kuf-12a", "kuf-4a_to_kbt-2"])
 kbt3 = Intermediate("kbt-3",["kuf-2", "kuf-7", "kuf-12a", "kuf-4a_to_kbt-3"]) 
 
-intermediates = [ka1ab_ka4, ka1ab_ka5a, ka1ab_ka6, ka4, ka4ab_kuf2, ka4ab_kuf3, ka4ab_kuf3a, ka5a, ka6, kuf2, kuf3, kuf3a, kuf4, kuf4a_kbt2, kuf4a_kbt3, kuf4b, kuf5, kbt2, kbt3]
+intermediates = [ka4, ka6, kuf2, kuf3, kuf3a, kuf4, kuf4a_kbt2, kuf4a_kbt3, kuf4b, kuf5, kbt2, kbt3]
 
 route_dict = {}
 route_name_list=[]
@@ -282,10 +235,10 @@ for idx in range(14):
    print(swank)
 
 
-   createXML_hourly_profiled(route_dict, idx)
-   print(route_dict)
-   print(sum(route_dict.values()))
+   #createXML_hourly_profiled(route_dict, idx)
+   #print(route_dict)
+   #print(sum(route_dict.values()))
 
-#createXML_wholeday_profiled(route_dict)
+createXML_wholeday_profiled(route_dict)
 #print
 
