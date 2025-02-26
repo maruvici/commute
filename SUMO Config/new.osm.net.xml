@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-02-26 01:43:29 by Eclipse SUMO netedit Version 1.20.0
+<!-- generated on 2025-02-27 02:59:23 by Eclipse SUMO netedit Version 1.20.0
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
 
     <input>
@@ -137,11 +137,11 @@
         <lane id=":katip-b.gonzales-thornton-drive-intersection_25_0" index="0" allow="private passenger taxi motorcycle" speed="4.62" length="3.40" shape="-62.73,-2.97 -62.13,-2.65 -60.69,-0.35"/>
     </edge>
     <edge id=":katip-f.dela_rosa-univ_road-intersection_0" function="internal">
-        <lane id=":katip-f.dela_rosa-univ_road-intersection_0_0" index="0" allow="private passenger taxi motorcycle" speed="5.83" length="8.84" shape="-35.55,-246.17 -37.95,-246.76 -39.71,-246.29 -40.84,-244.76 -41.33,-242.17"/>
+        <lane id=":katip-f.dela_rosa-univ_road-intersection_0_0" index="0" allow="private passenger taxi motorcycle" speed="5.83" length="8.86" shape="-35.52,-246.16 -37.94,-246.75 -39.71,-246.29 -40.84,-244.76 -41.33,-242.17"/>
     </edge>
     <edge id=":katip-f.dela_rosa-univ_road-intersection_1" function="internal">
-        <lane id=":katip-f.dela_rosa-univ_road-intersection_1_0" index="0" allow="private passenger taxi motorcycle" speed="13.89" length="33.73" shape="-35.55,-246.17 -44.89,-250.97 -51.51,-256.53 -55.40,-262.84 -56.55,-269.92"/>
-        <lane id=":katip-f.dela_rosa-univ_road-intersection_1_1" index="1" allow="private passenger taxi motorcycle" speed="13.73" length="31.65" shape="-35.55,-246.17 -43.51,-250.47 -49.13,-255.85 -52.41,-262.30 -53.35,-269.83"/>
+        <lane id=":katip-f.dela_rosa-univ_road-intersection_1_0" index="0" allow="private passenger taxi motorcycle" speed="13.89" length="33.76" shape="-35.52,-246.16 -44.88,-250.96 -51.50,-256.52 -55.39,-262.84 -56.55,-269.92"/>
+        <lane id=":katip-f.dela_rosa-univ_road-intersection_1_1" index="1" allow="private passenger taxi motorcycle" speed="13.74" length="31.68" shape="-35.52,-246.16 -43.49,-250.47 -49.12,-255.85 -52.41,-262.30 -53.35,-269.83"/>
     </edge>
     <edge id=":katip-f.dela_rosa-univ_road-intersection_3" function="internal">
         <lane id=":katip-f.dela_rosa-univ_road-intersection_3_0" index="0" allow="private passenger taxi motorcycle" speed="9.77" length="25.07" shape="-35.07,-264.56 -43.57,-263.40 -50.43,-263.54 -54.99,-265.52 -56.55,-269.92"/>
@@ -151,7 +151,7 @@
         <lane id=":katip-f.dela_rosa-univ_road-intersection_5_0" index="0" allow="private passenger taxi motorcycle" speed="8.07" length="15.22" shape="-40.74,-269.47 -40.47,-264.34 -39.25,-260.71 -37.07,-258.58 -33.93,-257.96"/>
     </edge>
     <edge id=":katip-f.dela_rosa-univ_road-intersection_6" function="internal">
-        <lane id=":katip-f.dela_rosa-univ_road-intersection_6_0" index="0" allow="private passenger taxi motorcycle" speed="9.95" length="20.56" shape="-40.74,-269.47 -40.60,-261.89 -39.54,-256.32 -37.57,-252.78 -34.69,-251.27"/>
+        <lane id=":katip-f.dela_rosa-univ_road-intersection_6_0" index="0" allow="private passenger taxi motorcycle" speed="9.86" length="20.07" shape="-40.74,-269.47 -40.57,-262.19 -39.47,-256.84 -37.43,-253.41 -34.46,-251.91"/>
     </edge>
     <edge id=":katip-f.dela_rosa-univ_road-intersection_7" function="internal">
         <lane id=":katip-f.dela_rosa-univ_road-intersection_7_0" index="0" allow="private passenger taxi motorcycle" speed="13.89" length="27.23" shape="-40.74,-269.47 -41.33,-242.17"/>
@@ -166,7 +166,7 @@
         <lane id=":katip-f.dela_rosa-univ_road-intersection_12_0" index="0" allow="private passenger taxi motorcycle" speed="13.89" length="38.41" shape="-72.27,-259.53 -62.85,-258.41 -51.30,-257.92 -40.65,-257.85 -33.93,-257.96"/>
     </edge>
     <edge id=":katip-f.dela_rosa-univ_road-intersection_13" function="internal">
-        <lane id=":katip-f.dela_rosa-univ_road-intersection_13_0" index="0" allow="private passenger taxi motorcycle" speed="13.89" length="38.56" shape="-72.91,-256.39 -34.69,-251.27"/>
+        <lane id=":katip-f.dela_rosa-univ_road-intersection_13_0" index="0" allow="private passenger taxi motorcycle" speed="13.89" length="38.71" shape="-72.91,-256.39 -34.46,-251.91"/>
     </edge>
     <edge id=":katip-f.dela_rosa-univ_road-intersection_14" function="internal">
         <lane id=":katip-f.dela_rosa-univ_road-intersection_14_0" index="0" speed="12.18" length="30.39" shape="-72.91,-256.39 -61.71,-253.55 -53.78,-250.29 -49.12,-246.61 -47.72,-242.51"/>
@@ -184,7 +184,7 @@
         <lane id=":katip-f.dela_rosa-univ_road-intersection_20_0" index="0" allow="private passenger taxi motorcycle" speed="13.89" length="26.98" shape="-53.86,-242.85 -53.35,-269.83"/>
     </edge>
     <edge id=":katip-f.dela_rosa-univ_road-intersection_21" function="internal">
-        <lane id=":katip-f.dela_rosa-univ_road-intersection_21_0" index="0" allow="private passenger taxi motorcycle" speed="9.90" length="23.89" shape="-53.86,-242.85 -52.44,-247.58 -48.77,-250.56 -42.86,-251.79 -34.69,-251.27"/>
+        <lane id=":katip-f.dela_rosa-univ_road-intersection_21_0" index="0" allow="private passenger taxi motorcycle" speed="10.01" length="24.57" shape="-53.86,-242.85 -52.41,-247.92 -48.69,-251.11 -42.71,-252.45 -34.46,-251.91"/>
     </edge>
     <edge id=":katip-f.dela_rosa-univ_road-intersection_22" function="internal">
         <lane id=":katip-f.dela_rosa-univ_road-intersection_22_0" index="0" allow="private passenger taxi motorcycle" speed="4.64" length="8.99" shape="-53.86,-242.85 -52.20,-245.07 -50.63,-245.75 -49.13,-244.90 -47.72,-242.51"/>
@@ -270,13 +270,13 @@
         <lane id="L5_1" index="1" allow="private passenger taxi motorcycle" speed="13.89" length="190.47" shape="-53.04,-1010.23 -45.46,-1200.55"/>
         <lane id="L5_2" index="2" allow="private passenger taxi motorcycle" speed="13.89" length="190.47" shape="-49.85,-1010.10 -42.26,-1200.42"/>
     </edge>
-    <edge id="L7" from="katip-left-curve" to="katip-aurora-intersection" priority="-1" spreadType="center" shape="-45.62,-1196.44 -42.10,-1236.66">
-        <lane id="L7_0" index="0" allow="private passenger taxi motorcycle" speed="13.89" length="0.20" shape="-46.30,-1207.01 -46.28,-1207.20"/>
-        <lane id="L7_1" index="1" allow="private passenger taxi motorcycle" speed="13.89" length="0.20" shape="-43.11,-1206.81 -43.09,-1207.01"/>
+    <edge id="L6" from="katip-left-curve" to="katip-aurora-intersection" priority="-1" spreadType="center" shape="-45.62,-1196.44 -42.10,-1236.66">
+        <lane id="L6_0" index="0" allow="private passenger taxi motorcycle" speed="13.89" length="0.20" shape="-46.30,-1207.01 -46.28,-1207.20"/>
+        <lane id="L6_1" index="1" allow="private passenger taxi motorcycle" speed="13.89" length="0.20" shape="-43.11,-1206.81 -43.09,-1207.01"/>
     </edge>
-    <edge id="L8" from="katip-aurora-intersection" to="katip-bottom_left" priority="-1" spreadType="center" shape="-42.31,-1236.30 -35.53,-1431.17">
-        <lane id="L8_0" index="0" allow="private passenger taxi motorcycle" speed="13.89" length="168.40" shape="-42.98,-1262.93 -37.13,-1431.23"/>
-        <lane id="L8_1" index="1" allow="private passenger taxi motorcycle" speed="13.89" length="168.40" shape="-39.79,-1262.82 -33.93,-1431.11"/>
+    <edge id="L7" from="katip-aurora-intersection" to="katip-bottom_left" priority="-1" spreadType="center" shape="-42.31,-1236.30 -35.53,-1431.17">
+        <lane id="L7_0" index="0" allow="private passenger taxi motorcycle" speed="13.89" length="168.40" shape="-42.98,-1262.93 -37.13,-1431.23"/>
+        <lane id="L7_1" index="1" allow="private passenger taxi motorcycle" speed="13.89" length="168.40" shape="-39.79,-1262.82 -33.93,-1431.11"/>
     </edge>
     <edge id="R1" from="thornton_drive-exit" to="katip-top_right" name="Katipunan Avenue" priority="-1" spreadType="center">
         <lane id="R1_0" index="0" allow="private passenger taxi motorcycle" speed="13.89" length="347.53" shape="-52.00,29.47 -67.32,376.66"/>
@@ -313,9 +313,6 @@
     <edge id="R7" from="katip-bottom_right" to="katip-aurora-intersection" priority="-1" spreadType="center" shape="0.09,-1429.81 -6.33,-1223.98">
         <lane id="R7_0" index="0" allow="private passenger taxi motorcycle" speed="13.89" length="168.28" shape="1.69,-1429.76 -3.56,-1261.55"/>
         <lane id="R7_1" index="1" allow="private passenger taxi motorcycle" speed="13.89" length="168.28" shape="-1.51,-1429.86 -6.76,-1261.67"/>
-    </edge>
-    <edge id="UR1_dest" from="katip-f.dela_rosa-univ_road-intersection" to="univ_road-lower" priority="-1" spreadType="center" shape="-39.67,-257.76 76.02,-261.70">
-        <lane id="UR1_dest_0" index="0" allow="private passenger taxi motorcycle" speed="13.89" length="110.01" shape="-33.93,-257.96 76.02,-261.70"/>
     </edge>
     <edge id="aurora-lower_in" from="aurora-upper-left" to="katip-aurora-intersection" priority="-1" spreadType="center" shape="-275.07,-1353.25 -17.37,-1239.97">
         <lane id="aurora-lower_in_0" index="0" allow="private passenger taxi motorcycle" speed="13.89" length="244.78" shape="-273.14,-1357.64 -49.03,-1259.13"/>
@@ -378,11 +375,14 @@
     <edge id="univ_road-lower_in" from="ateneo-lower" to="katip-f.dela_rosa-univ_road-intersection" priority="-1" spreadType="center" shape="234.85,-312.86 -40.22,-263.64">
         <lane id="univ_road-lower_in_0" index="0" allow="private passenger taxi motorcycle" speed="13.89" length="274.21" shape="234.85,-312.86 -35.07,-264.56"/>
     </edge>
-    <edge id="univ_road-upper_out" from="ateneo-upper" to="katip-f.dela_rosa-univ_road-intersection" priority="-1" spreadType="center" shape="210.76,-144.46 -43.45,-249.43">
-        <lane id="univ_road-upper_out_0" index="0" allow="private passenger taxi motorcycle" speed="13.89" length="266.48" shape="210.76,-144.46 -35.55,-246.17"/>
+    <edge id="univ_road-lower_out" from="katip-f.dela_rosa-univ_road-intersection" to="univ_road-lower" priority="-1" spreadType="center" shape="-39.67,-257.76 76.02,-261.70">
+        <lane id="univ_road-lower_out_0" index="0" allow="private passenger taxi motorcycle" speed="13.89" length="110.01" shape="-33.93,-257.96 76.02,-261.70"/>
     </edge>
-    <edge id="univ_road-upper_out1" from="katip-f.dela_rosa-univ_road-intersection" to="univ_road-upper" priority="-1" spreadType="center" shape="-39.36,-251.97 73.80,-234.94">
-        <lane id="univ_road-upper_out1_0" index="0" allow="private passenger taxi motorcycle" speed="13.89" length="109.72" shape="-34.69,-251.27 73.80,-234.94"/>
+    <edge id="univ_road-upper_in" from="ateneo-upper" to="katip-f.dela_rosa-univ_road-intersection" priority="-1" spreadType="center" shape="210.76,-144.46 -43.45,-249.43">
+        <lane id="univ_road-upper_in_0" index="0" allow="private passenger taxi motorcycle" speed="13.89" length="266.45" shape="210.76,-144.46 -35.52,-246.16"/>
+    </edge>
+    <edge id="univ_road-upper_out" from="katip-f.dela_rosa-univ_road-intersection" to="univ_road-upper" priority="-1" spreadType="center" shape="-43.20,-253.28 73.80,-234.94">
+        <lane id="univ_road-upper_out_0" index="0" allow="private passenger taxi motorcycle" speed="13.89" length="109.58" shape="-34.46,-251.91 73.80,-234.94"/>
     </edge>
     <edge id="xavier-in" from="xavierville" to="katip-mid-left-xavier" priority="-1" spreadType="center" shape="-179.48,-1005.26 -53.38,-1004.81">
         <lane id="xavier-in_0" index="0" allow="private passenger taxi motorcycle" speed="13.89" length="116.59" shape="-178.60,-1005.26 -62.00,-1004.84"/>
@@ -432,7 +432,7 @@
     <junction id="auroro-upper-left" type="dead_end" x="-281.55" y="-1338.43" incLanes="aurora-upper_out_0 aurora-upper_out_1 aurora-upper_out_2 aurora-upper_out_3" intLanes="" shape="-284.12,-1332.57 -278.98,-1344.29"/>
     <junction id="b.gonzales" type="dead_end" x="-209.70" y="-58.50" incLanes="b.gonzales-road-out_0" intLanes="" shape="-209.70,-58.50 -210.59,-55.43 -209.70,-58.50"/>
     <junction id="f.dela_rosa" type="dead_end" x="-324.10" y="-309.61" incLanes="" intLanes="" shape="-324.74,-306.48 -323.46,-312.74"/>
-    <junction id="katip-aurora-intersection" type="traffic_light" x="-22.45" y="-1231.70" incLanes="aurora-upper_in_0 aurora-upper_in_1 aurora-upper_in_2 aurora-upper_in_3 R7_0 R7_1 aurora-lower_in_0 aurora-lower_in_1 aurora-lower_in_2 aurora-lower_in_3 L7_0 L7_1" intLanes=":katip-aurora-intersection_0_0 :katip-aurora-intersection_0_1 :katip-aurora-intersection_2_0 :katip-aurora-intersection_2_1 :katip-aurora-intersection_2_2 :katip-aurora-intersection_5_0 :katip-aurora-intersection_6_0 :katip-aurora-intersection_7_0 :katip-aurora-intersection_8_0 :katip-aurora-intersection_8_1 :katip-aurora-intersection_10_0 :katip-aurora-intersection_10_1 :katip-aurora-intersection_10_2 :katip-aurora-intersection_10_3 :katip-aurora-intersection_14_0 :katip-aurora-intersection_14_1" shape="0.29,-1207.35 12.31,-1233.24 7.77,-1235.95 4.09,-1239.46 1.28,-1243.77 -0.67,-1248.88 -1.75,-1254.79 -1.96,-1261.50 -44.58,-1262.98 -45.07,-1260.94 -45.60,-1260.39 -46.33,-1260.14 -47.26,-1260.21 -48.38,-1260.59 -60.03,-1234.36 -55.81,-1231.86 -52.48,-1228.51 -50.02,-1224.29 -48.45,-1219.22 -47.76,-1213.29 -47.95,-1206.50 -3.48,-1205.01 -3.00,-1207.04 -2.47,-1207.59 -1.74,-1207.82 -0.82,-1207.74">
+    <junction id="katip-aurora-intersection" type="traffic_light" x="-22.45" y="-1231.70" incLanes="aurora-upper_in_0 aurora-upper_in_1 aurora-upper_in_2 aurora-upper_in_3 R7_0 R7_1 aurora-lower_in_0 aurora-lower_in_1 aurora-lower_in_2 aurora-lower_in_3 L6_0 L6_1" intLanes=":katip-aurora-intersection_0_0 :katip-aurora-intersection_0_1 :katip-aurora-intersection_2_0 :katip-aurora-intersection_2_1 :katip-aurora-intersection_2_2 :katip-aurora-intersection_5_0 :katip-aurora-intersection_6_0 :katip-aurora-intersection_7_0 :katip-aurora-intersection_8_0 :katip-aurora-intersection_8_1 :katip-aurora-intersection_10_0 :katip-aurora-intersection_10_1 :katip-aurora-intersection_10_2 :katip-aurora-intersection_10_3 :katip-aurora-intersection_14_0 :katip-aurora-intersection_14_1" shape="0.29,-1207.35 12.31,-1233.24 7.77,-1235.95 4.09,-1239.46 1.28,-1243.77 -0.67,-1248.88 -1.75,-1254.79 -1.96,-1261.50 -44.58,-1262.98 -45.07,-1260.94 -45.60,-1260.39 -46.33,-1260.14 -47.26,-1260.21 -48.38,-1260.59 -60.03,-1234.36 -55.81,-1231.86 -52.48,-1228.51 -50.02,-1224.29 -48.45,-1219.22 -47.76,-1213.29 -47.95,-1206.50 -3.48,-1205.01 -3.00,-1207.04 -2.47,-1207.59 -1.74,-1207.82 -0.82,-1207.74">
         <request index="0"  response="0000000000000000" foes="0000000000000000" cont="0"/>
         <request index="1"  response="0000000000000000" foes="0000000000000000" cont="0"/>
         <request index="2"  response="0000000000000000" foes="1100001100000000" cont="0"/>
@@ -475,9 +475,9 @@
         <request index="21" response="00000000000000111110000" foes="00000000110000111111110" cont="1"/>
         <request index="22" response="00000000100000111100000" foes="00000000100000111100000" cont="1"/>
     </junction>
-    <junction id="katip-bottom_left" type="dead_end" x="-35.53" y="-1431.17" incLanes="L8_0 L8_1" intLanes="" shape="-38.73,-1431.28 -32.33,-1431.06"/>
+    <junction id="katip-bottom_left" type="dead_end" x="-35.53" y="-1431.17" incLanes="L7_0 L7_1" intLanes="" shape="-38.73,-1431.28 -32.33,-1431.06"/>
     <junction id="katip-bottom_right" type="dead_end" x="0.09" y="-1429.81" incLanes="" intLanes="" shape="-3.11,-1429.91 3.29,-1429.71"/>
-    <junction id="katip-f.dela_rosa-univ_road-intersection" type="traffic_light" x="-52.01" y="-250.07" incLanes="univ_road-upper_out_0 univ_road-lower_in_0 R5_0 R5_1 R5_2 f.dela_rosa-road_0 f.dela_rosa-road_1 L2_0 L2_1 L2_2 L2_3 L2_4" intLanes=":katip-f.dela_rosa-univ_road-intersection_0_0 :katip-f.dela_rosa-univ_road-intersection_1_0 :katip-f.dela_rosa-univ_road-intersection_1_1 :katip-f.dela_rosa-univ_road-intersection_3_0 :katip-f.dela_rosa-univ_road-intersection_3_1 :katip-f.dela_rosa-univ_road-intersection_5_0 :katip-f.dela_rosa-univ_road-intersection_6_0 :katip-f.dela_rosa-univ_road-intersection_7_0 :katip-f.dela_rosa-univ_road-intersection_7_1 :katip-f.dela_rosa-univ_road-intersection_7_2 :katip-f.dela_rosa-univ_road-intersection_10_0 :katip-f.dela_rosa-univ_road-intersection_10_1 :katip-f.dela_rosa-univ_road-intersection_12_0 :katip-f.dela_rosa-univ_road-intersection_13_0 :katip-f.dela_rosa-univ_road-intersection_14_0 :katip-f.dela_rosa-univ_road-intersection_15_0 :katip-f.dela_rosa-univ_road-intersection_15_1 :katip-f.dela_rosa-univ_road-intersection_15_2 :katip-f.dela_rosa-univ_road-intersection_15_3 :katip-f.dela_rosa-univ_road-intersection_19_0 :katip-f.dela_rosa-univ_road-intersection_20_0 :katip-f.dela_rosa-univ_road-intersection_21_0 :katip-f.dela_rosa-univ_road-intersection_22_0" shape="-35.82,-244.55 -34.43,-252.85 -33.65,-256.36 -35.35,-266.14 -37.52,-266.19 -38.26,-266.61 -38.78,-267.29 -39.08,-268.23 -39.14,-269.43 -67.75,-270.23 -67.94,-267.21 -68.34,-264.79 -68.94,-262.97 -69.74,-261.75 -70.74,-261.12 -71.94,-261.09 -73.23,-254.82 -70.22,-253.08 -69.22,-251.46 -68.56,-249.34 -68.23,-246.74 -68.24,-243.63 -39.73,-242.08 -39.20,-244.13 -38.65,-244.69 -37.90,-244.95 -36.95,-244.90">
+    <junction id="katip-f.dela_rosa-univ_road-intersection" type="traffic_light" x="-52.01" y="-250.07" incLanes="univ_road-upper_in_0 univ_road-lower_in_0 R5_0 R5_1 R5_2 f.dela_rosa-road_0 f.dela_rosa-road_1 L2_0 L2_1 L2_2 L2_3 L2_4" intLanes=":katip-f.dela_rosa-univ_road-intersection_0_0 :katip-f.dela_rosa-univ_road-intersection_1_0 :katip-f.dela_rosa-univ_road-intersection_1_1 :katip-f.dela_rosa-univ_road-intersection_3_0 :katip-f.dela_rosa-univ_road-intersection_3_1 :katip-f.dela_rosa-univ_road-intersection_5_0 :katip-f.dela_rosa-univ_road-intersection_6_0 :katip-f.dela_rosa-univ_road-intersection_7_0 :katip-f.dela_rosa-univ_road-intersection_7_1 :katip-f.dela_rosa-univ_road-intersection_7_2 :katip-f.dela_rosa-univ_road-intersection_10_0 :katip-f.dela_rosa-univ_road-intersection_10_1 :katip-f.dela_rosa-univ_road-intersection_12_0 :katip-f.dela_rosa-univ_road-intersection_13_0 :katip-f.dela_rosa-univ_road-intersection_14_0 :katip-f.dela_rosa-univ_road-intersection_15_0 :katip-f.dela_rosa-univ_road-intersection_15_1 :katip-f.dela_rosa-univ_road-intersection_15_2 :katip-f.dela_rosa-univ_road-intersection_15_3 :katip-f.dela_rosa-univ_road-intersection_19_0 :katip-f.dela_rosa-univ_road-intersection_20_0 :katip-f.dela_rosa-univ_road-intersection_21_0 :katip-f.dela_rosa-univ_road-intersection_22_0" shape="-35.82,-244.55 -34.17,-253.48 -33.65,-256.36 -35.35,-266.14 -37.52,-266.19 -38.26,-266.61 -38.78,-267.29 -39.08,-268.23 -39.14,-269.43 -67.75,-270.23 -67.94,-267.21 -68.34,-264.79 -68.94,-262.97 -69.74,-261.75 -70.74,-261.12 -71.94,-261.09 -73.23,-254.82 -70.22,-253.08 -69.22,-251.46 -68.56,-249.34 -68.23,-246.74 -68.24,-243.63 -39.73,-242.08 -39.20,-244.13 -38.65,-244.69 -37.90,-244.95 -36.95,-244.90">
         <request index="0"  response="00000000000001110000000" foes="00000000000001110000000" cont="0"/>
         <request index="1"  response="01111111011001110000000" foes="01111111011001110011000" cont="0"/>
         <request index="2"  response="01111111011001110000000" foes="01111111011001110011000" cont="0"/>
@@ -543,8 +543,8 @@
         <request index="1" response="000" foes="000" cont="0"/>
         <request index="2" response="000" foes="000" cont="0"/>
     </junction>
-    <junction id="univ_road-lower" type="dead_end" x="76.02" y="-261.70" incLanes="UR1_dest_0" intLanes="" shape="75.97,-263.30 76.07,-260.10"/>
-    <junction id="univ_road-upper" type="dead_end" x="73.80" y="-234.94" incLanes="univ_road-upper_out1_0" intLanes="" shape="74.04,-236.52 73.56,-233.36"/>
+    <junction id="univ_road-lower" type="dead_end" x="76.02" y="-261.70" incLanes="univ_road-lower_out_0" intLanes="" shape="75.97,-263.30 76.07,-260.10"/>
+    <junction id="univ_road-upper" type="dead_end" x="73.80" y="-234.94" incLanes="univ_road-upper_out_0" intLanes="" shape="74.05,-236.52 73.55,-233.36"/>
     <junction id="xavierville" type="dead_end" x="-178.60" y="-1004.52" incLanes="xavier-out_0" intLanes="" shape="-178.60,-1003.66 -178.59,-1006.86 -178.61,-1000.23"/>
 
     <junction id=":katip-b.gonzales-thornton-drive-intersection_23_0" type="internal" x="-63.08" y="-20.29" incLanes=":katip-b.gonzales-thornton-drive-intersection_9_0 L1_0 L1_1 L1_2 L1_3 L1_4" intLanes=":katip-b.gonzales-thornton-drive-intersection_1_0 :katip-b.gonzales-thornton-drive-intersection_2_0 :katip-b.gonzales-thornton-drive-intersection_2_1 :katip-b.gonzales-thornton-drive-intersection_13_0 :katip-b.gonzales-thornton-drive-intersection_14_0 :katip-b.gonzales-thornton-drive-intersection_15_0 :katip-b.gonzales-thornton-drive-intersection_16_0 :katip-b.gonzales-thornton-drive-intersection_16_1 :katip-b.gonzales-thornton-drive-intersection_16_2 :katip-b.gonzales-thornton-drive-intersection_16_3 :katip-b.gonzales-thornton-drive-intersection_16_4"/>
@@ -563,9 +563,9 @@
     <connection from="L2" to="L3" fromLane="1" toLane="1" via=":katip-f.dela_rosa-univ_road-intersection_15_1" tl="KFU_intersection" linkIndex="5" dir="s" state="O"/>
     <connection from="L2" to="L3" fromLane="2" toLane="2" via=":katip-f.dela_rosa-univ_road-intersection_15_2" tl="KFU_intersection" linkIndex="5" dir="s" state="O"/>
     <connection from="L2" to="L3" fromLane="3" toLane="3" via=":katip-f.dela_rosa-univ_road-intersection_15_3" tl="KFU_intersection" linkIndex="5" dir="s" state="O"/>
-    <connection from="L2" to="UR1_dest" fromLane="3" toLane="0" via=":katip-f.dela_rosa-univ_road-intersection_19_0" tl="KFU_intersection" linkIndex="6" dir="L" state="o"/>
+    <connection from="L2" to="univ_road-lower_out" fromLane="3" toLane="0" via=":katip-f.dela_rosa-univ_road-intersection_19_0" tl="KFU_intersection" linkIndex="6" dir="L" state="o"/>
     <connection from="L2" to="L3" fromLane="4" toLane="4" via=":katip-f.dela_rosa-univ_road-intersection_20_0" tl="KFU_intersection" linkIndex="5" dir="s" state="O"/>
-    <connection from="L2" to="univ_road-upper_out1" fromLane="4" toLane="0" via=":katip-f.dela_rosa-univ_road-intersection_21_0" tl="KFU_intersection" linkIndex="6" dir="l" state="o"/>
+    <connection from="L2" to="univ_road-upper_out" fromLane="4" toLane="0" via=":katip-f.dela_rosa-univ_road-intersection_21_0" tl="KFU_intersection" linkIndex="6" dir="l" state="o"/>
     <connection from="L2" to="R4" fromLane="4" toLane="2" via=":katip-f.dela_rosa-univ_road-intersection_22_0" tl="KFU_intersection" linkIndex="6" dir="t" state="o"/>
     <connection from="L3" to="L4" fromLane="0" toLane="0" via=":katip-mid-left-junc-UR_to_XV_0_0" dir="s" state="M"/>
     <connection from="L3" to="L4" fromLane="1" toLane="1" via=":katip-mid-left-junc-UR_to_XV_0_1" dir="s" state="M"/>
@@ -573,9 +573,9 @@
     <connection from="L4" to="L5" fromLane="0" toLane="1" via=":katip-mid-left-xavier_2_0" dir="s" state="M"/>
     <connection from="L4" to="L5" fromLane="1" toLane="2" via=":katip-mid-left-xavier_2_1" dir="s" state="M"/>
     <connection from="L5" to="katip-aurora-curve" fromLane="0" toLane="0" via=":katip-left-curve_0_0" dir="R" state="M"/>
-    <connection from="L5" to="L7" fromLane="2" toLane="1" via=":katip-left-curve_1_0" dir="s" state="M"/>
-    <connection from="L7" to="aurora-lower_out" fromLane="0" toLane="2" via=":katip-aurora-intersection_14_0" tl="clusterJ24_J27_J28_clusterJ20_J31" linkIndex="14" dir="l" state="o"/>
-    <connection from="L7" to="aurora-lower_out" fromLane="1" toLane="3" via=":katip-aurora-intersection_14_1" tl="clusterJ24_J27_J28_clusterJ20_J31" linkIndex="15" dir="l" state="o"/>
+    <connection from="L5" to="L6" fromLane="2" toLane="1" via=":katip-left-curve_1_0" dir="s" state="M"/>
+    <connection from="L6" to="aurora-lower_out" fromLane="0" toLane="2" via=":katip-aurora-intersection_14_0" tl="clusterJ24_J27_J28_clusterJ20_J31" linkIndex="14" dir="l" state="o"/>
+    <connection from="L6" to="aurora-lower_out" fromLane="1" toLane="3" via=":katip-aurora-intersection_14_1" tl="clusterJ24_J27_J28_clusterJ20_J31" linkIndex="15" dir="l" state="o"/>
     <connection from="R2" to="R1" fromLane="0" toLane="0" via=":thornton_drive-exit_3_0" dir="s" state="M"/>
     <connection from="R2" to="R1" fromLane="1" toLane="1" via=":thornton_drive-exit_3_1" dir="s" state="M"/>
     <connection from="R2" to="R1" fromLane="2" toLane="2" via=":thornton_drive-exit_3_2" dir="s" state="M"/>
@@ -590,8 +590,8 @@
     <connection from="R4" to="R3" fromLane="1" toLane="1" via=":katip-mid-right-junc-TD_to_UR_0_1" dir="s" state="M"/>
     <connection from="R4" to="R3" fromLane="2" toLane="2" via=":katip-mid-right-junc-TD_to_UR_0_2" dir="s" state="M"/>
     <connection from="R4" to="R3" fromLane="2" toLane="3" via=":katip-mid-right-junc-TD_to_UR_0_3" dir="s" state="M"/>
-    <connection from="R5" to="UR1_dest" fromLane="0" toLane="0" via=":katip-f.dela_rosa-univ_road-intersection_5_0" tl="KFU_intersection" linkIndex="2" dir="r" state="O"/>
-    <connection from="R5" to="univ_road-upper_out1" fromLane="0" toLane="0" via=":katip-f.dela_rosa-univ_road-intersection_6_0" tl="KFU_intersection" linkIndex="2" dir="R" state="O"/>
+    <connection from="R5" to="univ_road-lower_out" fromLane="0" toLane="0" via=":katip-f.dela_rosa-univ_road-intersection_5_0" tl="KFU_intersection" linkIndex="2" dir="r" state="O"/>
+    <connection from="R5" to="univ_road-upper_out" fromLane="0" toLane="0" via=":katip-f.dela_rosa-univ_road-intersection_6_0" tl="KFU_intersection" linkIndex="2" dir="R" state="O"/>
     <connection from="R5" to="R4" fromLane="0" toLane="0" via=":katip-f.dela_rosa-univ_road-intersection_7_0" tl="KFU_intersection" linkIndex="3" dir="s" state="O"/>
     <connection from="R5" to="R4" fromLane="1" toLane="1" via=":katip-f.dela_rosa-univ_road-intersection_7_1" tl="KFU_intersection" linkIndex="3" dir="s" state="O"/>
     <connection from="R5" to="R4" fromLane="2" toLane="2" via=":katip-f.dela_rosa-univ_road-intersection_7_2" tl="KFU_intersection" linkIndex="3" dir="s" state="O"/>
@@ -612,9 +612,9 @@
     <connection from="aurora-upper_in" to="aurora-mid_int" fromLane="0" toLane="0" via=":katip-aurora-intersection_2_0" tl="clusterJ24_J27_J28_clusterJ20_J31" linkIndex="2" dir="s" state="O"/>
     <connection from="aurora-upper_in" to="aurora-mid_int" fromLane="1" toLane="1" via=":katip-aurora-intersection_2_1" tl="clusterJ24_J27_J28_clusterJ20_J31" linkIndex="3" dir="s" state="O"/>
     <connection from="aurora-upper_in" to="aurora-mid_int" fromLane="2" toLane="2" via=":katip-aurora-intersection_2_2" tl="clusterJ24_J27_J28_clusterJ20_J31" linkIndex="4" dir="s" state="O"/>
-    <connection from="aurora-upper_in" to="L8" fromLane="2" toLane="0" via=":katip-aurora-intersection_5_0" tl="clusterJ24_J27_J28_clusterJ20_J31" linkIndex="5" dir="l" state="o"/>
+    <connection from="aurora-upper_in" to="L7" fromLane="2" toLane="0" via=":katip-aurora-intersection_5_0" tl="clusterJ24_J27_J28_clusterJ20_J31" linkIndex="5" dir="l" state="o"/>
     <connection from="aurora-upper_in" to="aurora-mid_int" fromLane="3" toLane="3" via=":katip-aurora-intersection_6_0" tl="clusterJ24_J27_J28_clusterJ20_J31" linkIndex="6" dir="s" state="O"/>
-    <connection from="aurora-upper_in" to="L8" fromLane="3" toLane="1" via=":katip-aurora-intersection_7_0" tl="clusterJ24_J27_J28_clusterJ20_J31" linkIndex="7" dir="l" state="o"/>
+    <connection from="aurora-upper_in" to="L7" fromLane="3" toLane="1" via=":katip-aurora-intersection_7_0" tl="clusterJ24_J27_J28_clusterJ20_J31" linkIndex="7" dir="l" state="o"/>
     <connection from="b.gonzales-road-in" to="L2" fromLane="0" toLane="0" via=":katip-b.gonzales-thornton-drive-intersection_10_0" dir="r" state="m"/>
     <connection from="b.gonzales-road-in" to="L2" fromLane="0" toLane="1" via=":katip-b.gonzales-thornton-drive-intersection_10_1" dir="r" state="m"/>
     <connection from="b.gonzales-road-in" to="L2" fromLane="0" toLane="2" via=":katip-b.gonzales-thornton-drive-intersection_10_2" dir="r" state="m"/>
@@ -622,8 +622,8 @@
     <connection from="b.gonzales-road-in" to="R2" fromLane="0" toLane="3" via=":katip-b.gonzales-thornton-drive-intersection_14_0" dir="l" state="m"/>
     <connection from="f.dela_rosa-road" to="L3" fromLane="0" toLane="0" via=":katip-f.dela_rosa-univ_road-intersection_10_0" tl="KFU_intersection" linkIndex="4" dir="r" state="o"/>
     <connection from="f.dela_rosa-road" to="L3" fromLane="0" toLane="1" via=":katip-f.dela_rosa-univ_road-intersection_10_1" tl="KFU_intersection" linkIndex="4" dir="r" state="o"/>
-    <connection from="f.dela_rosa-road" to="UR1_dest" fromLane="0" toLane="0" via=":katip-f.dela_rosa-univ_road-intersection_12_0" tl="KFU_intersection" linkIndex="4" dir="R" state="o"/>
-    <connection from="f.dela_rosa-road" to="univ_road-upper_out1" fromLane="1" toLane="0" via=":katip-f.dela_rosa-univ_road-intersection_13_0" tl="KFU_intersection" linkIndex="4" dir="s" state="o"/>
+    <connection from="f.dela_rosa-road" to="univ_road-lower_out" fromLane="0" toLane="0" via=":katip-f.dela_rosa-univ_road-intersection_12_0" tl="KFU_intersection" linkIndex="4" dir="R" state="o"/>
+    <connection from="f.dela_rosa-road" to="univ_road-upper_out" fromLane="1" toLane="0" via=":katip-f.dela_rosa-univ_road-intersection_13_0" tl="KFU_intersection" linkIndex="4" dir="s" state="o"/>
     <connection from="f.dela_rosa-road" to="R4" fromLane="1" toLane="2" via=":katip-f.dela_rosa-univ_road-intersection_14_0" tl="KFU_intersection" linkIndex="4" dir="l" state="o"/>
     <connection from="katip-aurora-curve" to="aurora-upper_out" fromLane="0" toLane="0" via=":aurora-left-curve_0_0" dir="s" state="m"/>
     <connection from="thornton_drive-extension-in" to="thornton_drive-lower_in" fromLane="0" toLane="0" via=":thorton_drive_0_0" dir="s" state="M"/>
@@ -638,9 +638,9 @@
     <connection from="thornton_drive-upper_in" to="L2" fromLane="0" toLane="4" via=":katip-b.gonzales-thornton-drive-intersection_2_1" dir="l" state="m"/>
     <connection from="univ_road-lower_in" to="L3" fromLane="0" toLane="3" via=":katip-f.dela_rosa-univ_road-intersection_3_0" tl="KFU_intersection" linkIndex="1" dir="l" state="o"/>
     <connection from="univ_road-lower_in" to="L3" fromLane="0" toLane="4" via=":katip-f.dela_rosa-univ_road-intersection_3_1" tl="KFU_intersection" linkIndex="1" dir="l" state="o"/>
-    <connection from="univ_road-upper_out" to="R4" fromLane="0" toLane="0" via=":katip-f.dela_rosa-univ_road-intersection_0_0" tl="KFU_intersection" linkIndex="0" dir="r" state="o"/>
-    <connection from="univ_road-upper_out" to="L3" fromLane="0" toLane="3" via=":katip-f.dela_rosa-univ_road-intersection_1_0" tl="KFU_intersection" linkIndex="0" dir="L" state="o"/>
-    <connection from="univ_road-upper_out" to="L3" fromLane="0" toLane="4" via=":katip-f.dela_rosa-univ_road-intersection_1_1" tl="KFU_intersection" linkIndex="0" dir="L" state="o"/>
+    <connection from="univ_road-upper_in" to="R4" fromLane="0" toLane="0" via=":katip-f.dela_rosa-univ_road-intersection_0_0" tl="KFU_intersection" linkIndex="0" dir="r" state="o"/>
+    <connection from="univ_road-upper_in" to="L3" fromLane="0" toLane="3" via=":katip-f.dela_rosa-univ_road-intersection_1_0" tl="KFU_intersection" linkIndex="0" dir="L" state="o"/>
+    <connection from="univ_road-upper_in" to="L3" fromLane="0" toLane="4" via=":katip-f.dela_rosa-univ_road-intersection_1_1" tl="KFU_intersection" linkIndex="0" dir="L" state="o"/>
     <connection from="xavier-in" to="L5" fromLane="0" toLane="0" via=":katip-mid-left-xavier_0_0" dir="r" state="M"/>
 
     <connection from=":aurora-left-curve_0" to="aurora-upper_out" fromLane="0" toLane="0" dir="s" state="M"/>
@@ -653,9 +653,9 @@
     <connection from=":katip-aurora-intersection_2" to="aurora-mid_int" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":katip-aurora-intersection_2" to="aurora-mid_int" fromLane="1" toLane="1" dir="s" state="M"/>
     <connection from=":katip-aurora-intersection_2" to="aurora-mid_int" fromLane="2" toLane="2" dir="s" state="M"/>
-    <connection from=":katip-aurora-intersection_5" to="L8" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":katip-aurora-intersection_5" to="L7" fromLane="0" toLane="0" dir="l" state="M"/>
     <connection from=":katip-aurora-intersection_6" to="aurora-mid_int" fromLane="0" toLane="3" dir="s" state="M"/>
-    <connection from=":katip-aurora-intersection_7" to="L8" fromLane="0" toLane="1" dir="l" state="M"/>
+    <connection from=":katip-aurora-intersection_7" to="L7" fromLane="0" toLane="1" dir="l" state="M"/>
     <connection from=":katip-aurora-intersection_8" to="aurora-mid_int" fromLane="0" toLane="2" dir="l" state="M"/>
     <connection from=":katip-aurora-intersection_8" to="aurora-mid_int" fromLane="1" toLane="3" dir="l" state="M"/>
     <connection from=":katip-aurora-intersection_10" to="aurora-lower_out" fromLane="0" toLane="0" dir="s" state="M"/>
@@ -695,26 +695,26 @@
     <connection from=":katip-f.dela_rosa-univ_road-intersection_1" to="L3" fromLane="1" toLane="4" dir="L" state="M"/>
     <connection from=":katip-f.dela_rosa-univ_road-intersection_3" to="L3" fromLane="0" toLane="3" dir="l" state="M"/>
     <connection from=":katip-f.dela_rosa-univ_road-intersection_3" to="L3" fromLane="1" toLane="4" dir="l" state="M"/>
-    <connection from=":katip-f.dela_rosa-univ_road-intersection_5" to="UR1_dest" fromLane="0" toLane="0" dir="r" state="M"/>
-    <connection from=":katip-f.dela_rosa-univ_road-intersection_6" to="univ_road-upper_out1" fromLane="0" toLane="0" dir="R" state="M"/>
+    <connection from=":katip-f.dela_rosa-univ_road-intersection_5" to="univ_road-lower_out" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":katip-f.dela_rosa-univ_road-intersection_6" to="univ_road-upper_out" fromLane="0" toLane="0" dir="R" state="M"/>
     <connection from=":katip-f.dela_rosa-univ_road-intersection_7" to="R4" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":katip-f.dela_rosa-univ_road-intersection_7" to="R4" fromLane="1" toLane="1" dir="s" state="M"/>
     <connection from=":katip-f.dela_rosa-univ_road-intersection_7" to="R4" fromLane="2" toLane="2" dir="s" state="M"/>
     <connection from=":katip-f.dela_rosa-univ_road-intersection_10" to="L3" fromLane="0" toLane="0" dir="r" state="M"/>
     <connection from=":katip-f.dela_rosa-univ_road-intersection_10" to="L3" fromLane="1" toLane="1" dir="r" state="M"/>
-    <connection from=":katip-f.dela_rosa-univ_road-intersection_12" to="UR1_dest" fromLane="0" toLane="0" dir="R" state="M"/>
-    <connection from=":katip-f.dela_rosa-univ_road-intersection_13" to="univ_road-upper_out1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":katip-f.dela_rosa-univ_road-intersection_12" to="univ_road-lower_out" fromLane="0" toLane="0" dir="R" state="M"/>
+    <connection from=":katip-f.dela_rosa-univ_road-intersection_13" to="univ_road-upper_out" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":katip-f.dela_rosa-univ_road-intersection_14" to="R4" fromLane="0" toLane="2" dir="l" state="M"/>
     <connection from=":katip-f.dela_rosa-univ_road-intersection_15" to="L3" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":katip-f.dela_rosa-univ_road-intersection_15" to="L3" fromLane="1" toLane="1" dir="s" state="M"/>
     <connection from=":katip-f.dela_rosa-univ_road-intersection_15" to="L3" fromLane="2" toLane="2" dir="s" state="M"/>
     <connection from=":katip-f.dela_rosa-univ_road-intersection_15" to="L3" fromLane="3" toLane="3" dir="s" state="M"/>
-    <connection from=":katip-f.dela_rosa-univ_road-intersection_19" to="UR1_dest" fromLane="0" toLane="0" dir="L" state="M"/>
+    <connection from=":katip-f.dela_rosa-univ_road-intersection_19" to="univ_road-lower_out" fromLane="0" toLane="0" dir="L" state="M"/>
     <connection from=":katip-f.dela_rosa-univ_road-intersection_20" to="L3" fromLane="0" toLane="4" dir="s" state="M"/>
-    <connection from=":katip-f.dela_rosa-univ_road-intersection_21" to="univ_road-upper_out1" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":katip-f.dela_rosa-univ_road-intersection_21" to="univ_road-upper_out" fromLane="0" toLane="0" dir="l" state="M"/>
     <connection from=":katip-f.dela_rosa-univ_road-intersection_22" to="R4" fromLane="0" toLane="2" dir="t" state="M"/>
     <connection from=":katip-left-curve_0" to="katip-aurora-curve" fromLane="0" toLane="0" dir="R" state="M"/>
-    <connection from=":katip-left-curve_1" to="L7" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":katip-left-curve_1" to="L6" fromLane="0" toLane="1" dir="s" state="M"/>
     <connection from=":katip-mid-left-junc-UR_to_XV_0" to="L4" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":katip-mid-left-junc-UR_to_XV_0" to="L4" fromLane="1" toLane="1" dir="s" state="M"/>
     <connection from=":katip-mid-left-xavier_0" to="L5" fromLane="0" toLane="0" dir="r" state="M"/>
