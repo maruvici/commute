@@ -11,20 +11,20 @@
     <route id="ka-10" edges="aurora-upper_in L7"/>
     <route id="ka-11" edges="aurora-upper_in aurora-mid_int aurora-upper_out"/>
     <route id="ka-12" edges="aurora-upper_in R6"/>
-    <route id="kuf-2" edges="R5 R4 R3"/>
+    <route id="kuf-2" edges="R5 R4"/>
     <route id="kuf-3" edges="R5 univ_road-lower_out"/>
     <route id="kuf-3a" edges="R5 univ_road-upper_out"/>
     <route id="kuf-4" edges="L2 univ_road-lower_out"/>
-    <route id="kuf-4a" edges="L2 R4 R3"/>
+    <route id="kuf-4a" edges="L2 R4"/>
     <route id="kuf-4b" edges="L2 univ_road-upper_out"/>
     <route id="kuf-5" edges="L2 L3"/>
-    <route id="kuf-7" edges="f.dela_rosa-road R4 R3"/>
+    <route id="kuf-7" edges="f.dela_rosa-road R4"/>
     <route id="kuf-8" edges="f.dela_rosa-road univ_road-lower_out"/>
     <route id="kuf-8a" edges="f.dela_rosa-road univ_road-upper_out"/>
     <route id="kuf-9" edges="f.dela_rosa-road L3"/>
     <route id="kuf-10b" edges="univ_road-lower_in L3"/>
     <route id="kuf-10c" edges="univ_road-upper_in L3"/>
-    <route id="kuf-12a" edges="univ_road-upper_in R4 R3"/>
+    <route id="kuf-12a" edges="univ_road-upper_in R4"/>
     <route id="kbt-2" edges="R3 R2 R1"/>
     <route id="kbt-3" edges="R3 thornton_drive-out thornton_drive-extension-out"/>
     <route id="kbt-4" edges="L1 thornton_drive-out thornton_drive-extension-out"/>
@@ -38,7 +38,7 @@
     <route id="kbt-11" edges="thornton_drive-upper_in b.gonzales-road-out"/>
     <route id="kbt-12" edges="thornton_drive-upper_in R2 R1"/>
 
-    <route id="ka-12_to_kuf-2" edges="aurora-upper_in R6 R5 R4 R3"/>
+    <route id="ka-12_to_kuf-2" edges="aurora-upper_in R6 R5 R4"/>
     <route id="ka-12_to_kuf-3" edges="aurora-upper_in R6 R5 univ_road-lower_out"/>
     <route id="ka-12_to_kuf-3a" edges="aurora-upper_in R6 R5 univ_road-upper_out"/>
     <route id="kuf-7_to_kbt-2" edges="f.dela_rosa-road R4 R3 R2 R1"/>
