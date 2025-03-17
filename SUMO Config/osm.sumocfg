@@ -15,6 +15,7 @@
         <tripinfo-output value="tripinfo_out.xml"/>
         <summary-output value="summary_out.xml"/>
         <statistic-output value="statistic_out.xml"/>
+        <queue-output value="queue_out.xml"/>
     </output>
 
     <processing>
