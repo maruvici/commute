@@ -1,0 +1,338 @@
+<routes>
+    <!--Four Hour Peak Period: 4PM to 8PM-->
+    
+    <!-- Define vehicle type -->
+    <vType length="4.425" width="1.1"  id="phCar" minGap="0.4" speedFactor="normc(1,0.1,0.2,2)" vClass="passenger" sigma="0.4" color="0,255,0"/>
+    <vType length="1.5" width="0.5" id="phMotor" minGap="0.2" speedFactor="normc(1.00,0.00)" vClass="motorcycle" sigma="0.15" color="0,0,255"/>
+
+    <!-- Define routes -->
+    <route id="ka-1" edges="R7 aurora-mid_int aurora-upper_out"/>
+    <route id="ka-4" edges="L5 L6 aurora-lower_out"/>
+    <route id="ka-6" edges="L5 katip-aurora-curve aurora-upper_out"/>
+    <route id="ka-8" edges="aurora-lower_in aurora-lower_out"/>
+    <route id="ka-10" edges="aurora-upper_in L7"/>
+    <route id="ka-11" edges="aurora-upper_in aurora-mid_int aurora-upper_out"/>
+    <route id="ka-12" edges="aurora-upper_in R6"/>
+    <route id="kuf-2" edges="R5 R4"/>
+    <route id="kuf-3" edges="R5 univ_road-lower_out"/>
+    <route id="kuf-3a" edges="R5 univ_road-upper_out"/>
+    <route id="kuf-4" edges="L2 univ_road-lower_out"/>
+    <route id="kuf-4a" edges="L2 R4"/>
+    <route id="kuf-4b" edges="L2 univ_road-upper_out"/>
+    <route id="kuf-5" edges="L2 L3"/>
+    <route id="kuf-7" edges="f.dela_rosa-road R4"/>
+    <route id="kuf-8" edges="f.dela_rosa-road univ_road-lower_out"/>
+    <route id="kuf-8a" edges="f.dela_rosa-road univ_road-upper_out"/>
+    <route id="kuf-9" edges="f.dela_rosa-road L3"/>
+    <route id="kuf-10b" edges="univ_road-lower_in L3"/>
+    <route id="kuf-10c" edges="univ_road-upper_in L3"/>
+    <route id="kuf-12a" edges="univ_road-upper_in R4"/>
+    <route id="kbt-2" edges="R3 R2 R1"/>
+    <route id="kbt-3" edges="R3 thornton_drive-out thornton_drive-extension-out"/>
+    <route id="kbt-4" edges="L1 thornton_drive-out thornton_drive-extension-out"/>
+    <route id="kbt-4a" edges="L1 R2 R1"/>
+    <route id="kbt-5" edges="L1 L2"/>
+    <route id="kbt-6" edges="L1 b.gonzales-road-out"/>
+    <route id="kbt-7" edges="b.gonzales-road-in R2 R1"/>
+    <route id="kbt-8" edges="b.gonzales-road-in thornton_drive-out thornton_drive-extension-out"/>
+    <route id="kbt-9" edges="b.gonzales-road-in L2"/>
+    <route id="kbt-10" edges="thornton_drive-upper_in L2"/>
+    <route id="kbt-11" edges="thornton_drive-upper_in b.gonzales-road-out"/>
+    <route id="kbt-12" edges="thornton_drive-upper_in R2 R1"/>
+
+    <route id="ka-12_to_kuf-2" edges="aurora-upper_in R6 R5 R4"/>
+    <route id="ka-12_to_kuf-3" edges="aurora-upper_in R6 R5 univ_road-lower_out"/>
+    <route id="ka-12_to_kuf-3a" edges="aurora-upper_in R6 R5 univ_road-upper_out"/>
+    <route id="kuf-7_to_kbt-2" edges="f.dela_rosa-road R4 R3 R2 R1"/>
+    <route id="kuf-7_to_kbt-3" edges="f.dela_rosa-road R4 R3 thornton_drive-out thornton_drive-extension-out"/>
+    <route id="kuf-9_to_ka-4" edges="f.dela_rosa-road L3 L4 L5 L6 aurora-lower_out"/>
+    <route id="kuf-9_to_ka-6" edges="f.dela_rosa-road L3 L4 L5 katip-aurora-curve aurora-upper_out"/>
+    <route id="kuf-10b_to_ka-4" edges="univ_road-lower_in L3 L4 L5 L6 aurora-lower_out"/>
+    <route id="kuf-10b_to_ka-6" edges="univ_road-lower_in L3 L4 L5 katip-aurora-curve aurora-upper_out"/>
+    <route id="kuf-10c_to_ka-4" edges="univ_road-upper_in L3 L4 L5 L6 aurora-lower_out"/>
+    <route id="kuf-10c_to_ka-6" edges="univ_road-upper_in L3 L4 L5 katip-aurora-curve aurora-upper_out"/>
+    <route id="kbt-5_to_kuf-4" edges="L1 L2 univ_road-lower_out"/>
+    <route id="kbt-5_to_kuf-4a_to_kbt-2" edges="L1 L2 R4 R3 R2 R1"/>
+    <route id="kbt-5_to_kuf-4a_to_kbt-3" edges="L1 L2 R4 R3 thornton_drive-out thornton_drive-extension-out"/>
+    <route id="kbt-5_to_kuf-4b" edges="L1 L2 univ_road-upper_out"/>
+    <route id="kbt-5_to_kuf-5" edges="L1 L2 L3"/>
+    <route id="kbt-9_to_kuf-4" edges="b.gonzales-road-in L2 univ_road-lower_out"/>
+    <route id="kbt-9_to_kuf-4b" edges="b.gonzales-road-in L2 univ_road-upper_out"/>
+    <route id="kbt-9_to_kuf-5" edges="b.gonzales-road-in L2 L3"/>
+    <route id="kbt-10_to_kuf-4" edges="thornton_drive-upper_in L2 univ_road-lower_out"/>
+    <route id="kbt-10_to_kuf-4b" edges="thornton_drive-upper_in L2 univ_road-upper_out"/>
+    <route id="kbt-10_to_kuf-5" edges="thornton_drive-upper_in L2 L3"/>
+    
+    <!-- Define flows (created in distribute-profile.py) -->
+    <!--4PM to 5PM-->
+    <flow id ="f_0" type = "phMotor" begin="0.00" route="ka-1" end="3600.00" number="364"/>
+    <flow id ="f_1" type = "phCar" begin="0.00" route="ka-1" end="3600.00" number="243"/>
+    <flow id ="f_2" type = "phMotor" begin="0.00" route="ka-8" end="3600.00" number="1255"/>
+    <flow id ="f_3" type = "phCar" begin="0.00" route="ka-8" end="3600.00" number="837"/>
+    <flow id ="f_4" type = "phMotor" begin="0.00" route="ka-10" end="3600.00" number="490"/>
+    <flow id ="f_5" type = "phCar" begin="0.00" route="ka-10" end="3600.00" number="327"/>
+    <flow id ="f_6" type = "phMotor" begin="0.00" route="ka-11" end="3600.00" number="2016"/>
+    <flow id ="f_7" type = "phCar" begin="0.00" route="ka-11" end="3600.00" number="1344"/>
+    <flow id ="f_8" type = "phMotor" begin="0.00" route="ka-12_to_kuf-2" end="3600.00" number="2563"/>
+    <flow id ="f_9" type = "phCar" begin="0.00" route="ka-12_to_kuf-2" end="3600.00" number="1708"/>
+    <flow id ="f_10" type = "phMotor" begin="0.00" route="ka-12_to_kuf-3" end="3600.00" number="166"/>
+    <flow id ="f_11" type = "phCar" begin="0.00" route="ka-12_to_kuf-3" end="3600.00" number="110"/>
+    <flow id ="f_12" type = "phMotor" begin="0.00" route="ka-12_to_kuf-3a" end="3600.00" number="19"/>
+    <flow id ="f_13" type = "phCar" begin="0.00" route="ka-12_to_kuf-3a" end="3600.00" number="12"/>
+    <flow id ="f_14" type = "phMotor" begin="0.00" route="kuf-7_to_kbt-2" end="3600.00" number="115"/>
+    <flow id ="f_15" type = "phCar" begin="0.00" route="kuf-7_to_kbt-2" end="3600.00" number="76"/>
+    <flow id ="f_16" type = "phMotor" begin="0.00" route="kuf-7_to_kbt-3" end="3600.00" number="1"/>
+    <flow id ="f_17" type = "phCar" begin="0.00" route="kuf-7_to_kbt-3" end="3600.00" number="1"/>
+    <flow id ="f_18" type = "phMotor" begin="0.00" route="kuf-8" end="3600.00" number="68"/>
+    <flow id ="f_19" type = "phCar" begin="0.00" route="kuf-8" end="3600.00" number="46"/>
+    <flow id ="f_20" type = "phMotor" begin="0.00" route="kuf-8a" end="3600.00" number="67"/>
+    <flow id ="f_21" type = "phCar" begin="0.00" route="kuf-8a" end="3600.00" number="44"/>
+    <flow id ="f_22" type = "phMotor" begin="0.00" route="kuf-9_to_ka-4" end="3600.00" number="67"/>
+    <flow id ="f_23" type = "phCar" begin="0.00" route="kuf-9_to_ka-4" end="3600.00" number="44"/>
+    <flow id ="f_24" type = "phMotor" begin="0.00" route="kuf-9_to_ka-6" end="3600.00" number="3"/>
+    <flow id ="f_25" type = "phCar" begin="0.00" route="kuf-9_to_ka-6" end="3600.00" number="2"/>
+    <flow id ="f_26" type = "phMotor" begin="0.00" route="kuf-10b_to_ka-4" end="3600.00" number="167"/>
+    <flow id ="f_27" type = "phCar" begin="0.00" route="kuf-10b_to_ka-4" end="3600.00" number="111"/>
+    <flow id ="f_28" type = "phMotor" begin="0.00" route="kuf-10b_to_ka-6" end="3600.00" number="8"/>
+    <flow id ="f_29" type = "phCar" begin="0.00" route="kuf-10b_to_ka-6" end="3600.00" number="5"/>
+    <flow id ="f_30" type = "phMotor" begin="0.00" route="kuf-10c_to_ka-4" end="3600.00" number="425"/>
+    <flow id ="f_31" type = "phCar" begin="0.00" route="kuf-10c_to_ka-4" end="3600.00" number="284"/>
+    <flow id ="f_32" type = "phMotor" begin="0.00" route="kuf-10c_to_ka-6" end="3600.00" number="20"/>
+    <flow id ="f_33" type = "phCar" begin="0.00" route="kuf-10c_to_ka-6" end="3600.00" number="13"/>
+    <flow id ="f_34" type = "phMotor" begin="0.00" route="kbt-4" end="3600.00" number="31"/>
+    <flow id ="f_35" type = "phCar" begin="0.00" route="kbt-4" end="3600.00" number="21"/>
+    <flow id ="f_36" type = "phMotor" begin="0.00" route="kbt-4a" end="3600.00" number="289"/>
+    <flow id ="f_37" type = "phCar" begin="0.00" route="kbt-4a" end="3600.00" number="192"/>
+    <flow id ="f_38" type = "phMotor" begin="0.00" route="kbt-5_to_kuf-4" end="3600.00" number="88"/>
+    <flow id ="f_39" type = "phCar" begin="0.00" route="kbt-5_to_kuf-4" end="3600.00" number="59"/>
+    <flow id ="f_40" type = "phMotor" begin="0.00" route="kbt-5_to_kuf-4a_to_kbt-3" end="3600.00" number="2"/>
+    <flow id ="f_41" type = "phCar" begin="0.00" route="kbt-5_to_kuf-4a_to_kbt-3" end="3600.00" number="2"/>
+    <flow id ="f_42" type = "phMotor" begin="0.00" route="kbt-5_to_kuf-4b" end="3600.00" number="76"/>
+    <flow id ="f_43" type = "phCar" begin="0.00" route="kbt-5_to_kuf-4b" end="3600.00" number="50"/>
+    <flow id ="f_44" type = "phMotor" begin="0.00" route="kbt-5_to_kuf-5" end="3600.00" number="3119"/>
+    <flow id ="f_45" type = "phCar" begin="0.00" route="kbt-5_to_kuf-5" end="3600.00" number="2079"/>
+    <flow id ="f_46" type = "phMotor" begin="0.00" route="kbt-6" end="3600.00" number="398"/>
+    <flow id ="f_47" type = "phCar" begin="0.00" route="kbt-6" end="3600.00" number="265"/>
+    <flow id ="f_48" type = "phMotor" begin="0.00" route="kbt-7" end="3600.00" number="434"/>
+    <flow id ="f_49" type = "phCar" begin="0.00" route="kbt-7" end="3600.00" number="290"/>
+    <flow id ="f_50" type = "phMotor" begin="0.00" route="kbt-8" end="3600.00" number="9"/>
+    <flow id ="f_51" type = "phCar" begin="0.00" route="kbt-8" end="3600.00" number="6"/>
+    <flow id ="f_52" type = "phMotor" begin="0.00" route="kbt-9_to_kuf-4" end="3600.00" number="1"/>
+    <flow id ="f_53" type = "phMotor" begin="0.00" route="kbt-9_to_kuf-4b" end="3600.00" number="1"/>
+    <flow id ="f_54" type = "phMotor" begin="0.00" route="kbt-9_to_kuf-5" end="3600.00" number="20"/>
+    <flow id ="f_55" type = "phCar" begin="0.00" route="kbt-9_to_kuf-5" end="3600.00" number="13"/>
+    <flow id ="f_56" type = "phMotor" begin="0.00" route="kbt-10_to_kuf-4" end="3600.00" number="2"/>
+    <flow id ="f_57" type = "phCar" begin="0.00" route="kbt-10_to_kuf-4" end="3600.00" number="2"/>
+    <flow id ="f_58" type = "phMotor" begin="0.00" route="kbt-10_to_kuf-4b" end="3600.00" number="2"/>
+    <flow id ="f_59" type = "phCar" begin="0.00" route="kbt-10_to_kuf-4b" end="3600.00" number="1"/>
+    <flow id ="f_60" type = "phMotor" begin="0.00" route="kbt-10_to_kuf-5" end="3600.00" number="84"/>
+    <flow id ="f_61" type = "phCar" begin="0.00" route="kbt-10_to_kuf-5" end="3600.00" number="56"/>
+    <flow id ="f_62" type = "phMotor" begin="0.00" route="kbt-11" end="3600.00" number="19"/>
+    <flow id ="f_63" type = "phCar" begin="0.00" route="kbt-11" end="3600.00" number="13"/>
+    <flow id ="f_64" type = "phMotor" begin="0.00" route="kbt-12" end="3600.00" number="7"/>
+    <flow id ="f_65" type = "phCar" begin="0.00" route="kbt-12" end="3600.00" number="5"/>
+    <!--5PM to 6PM-->
+    <flow id ="f_66" type = "phMotor" begin="3600.00" route="ka-1" end="7200.00" number="399"/>
+    <flow id ="f_67" type = "phCar" begin="3600.00" route="ka-1" end="7200.00" number="266"/>
+    <flow id ="f_68" type = "phMotor" begin="3600.00" route="ka-8" end="7200.00" number="1375"/>
+    <flow id ="f_69" type = "phCar" begin="3600.00" route="ka-8" end="7200.00" number="916"/>
+    <flow id ="f_70" type = "phMotor" begin="3600.00" route="ka-10" end="7200.00" number="537"/>
+    <flow id ="f_71" type = "phCar" begin="3600.00" route="ka-10" end="7200.00" number="358"/>
+    <flow id ="f_72" type = "phMotor" begin="3600.00" route="ka-11" end="7200.00" number="2209"/>
+    <flow id ="f_73" type = "phCar" begin="3600.00" route="ka-11" end="7200.00" number="1472"/>
+    <flow id ="f_74" type = "phMotor" begin="3600.00" route="ka-12_to_kuf-2" end="7200.00" number="2807"/>
+    <flow id ="f_75" type = "phCar" begin="3600.00" route="ka-12_to_kuf-2" end="7200.00" number="1871"/>
+    <flow id ="f_76" type = "phMotor" begin="3600.00" route="ka-12_to_kuf-3" end="7200.00" number="181"/>
+    <flow id ="f_77" type = "phCar" begin="3600.00" route="ka-12_to_kuf-3" end="7200.00" number="121"/>
+    <flow id ="f_78" type = "phMotor" begin="3600.00" route="ka-12_to_kuf-3a" end="7200.00" number="20"/>
+    <flow id ="f_79" type = "phCar" begin="3600.00" route="ka-12_to_kuf-3a" end="7200.00" number="14"/>
+    <flow id ="f_80" type = "phMotor" begin="3600.00" route="kuf-7_to_kbt-2" end="7200.00" number="125"/>
+    <flow id ="f_81" type = "phCar" begin="3600.00" route="kuf-7_to_kbt-2" end="7200.00" number="84"/>
+    <flow id ="f_82" type = "phMotor" begin="3600.00" route="kuf-7_to_kbt-3" end="7200.00" number="1"/>
+    <flow id ="f_83" type = "phCar" begin="3600.00" route="kuf-7_to_kbt-3" end="7200.00" number="1"/>
+    <flow id ="f_84" type = "phMotor" begin="3600.00" route="kuf-8" end="7200.00" number="75"/>
+    <flow id ="f_85" type = "phCar" begin="3600.00" route="kuf-8" end="7200.00" number="50"/>
+    <flow id ="f_86" type = "phMotor" begin="3600.00" route="kuf-8a" end="7200.00" number="73"/>
+    <flow id ="f_87" type = "phCar" begin="3600.00" route="kuf-8a" end="7200.00" number="49"/>
+    <flow id ="f_88" type = "phMotor" begin="3600.00" route="kuf-9_to_ka-4" end="7200.00" number="73"/>
+    <flow id ="f_89" type = "phCar" begin="3600.00" route="kuf-9_to_ka-4" end="7200.00" number="48"/>
+    <flow id ="f_90" type = "phMotor" begin="3600.00" route="kuf-9_to_ka-6" end="7200.00" number="4"/>
+    <flow id ="f_91" type = "phCar" begin="3600.00" route="kuf-9_to_ka-6" end="7200.00" number="2"/>
+    <flow id ="f_92" type = "phMotor" begin="3600.00" route="kuf-10b_to_ka-4" end="7200.00" number="183"/>
+    <flow id ="f_93" type = "phCar" begin="3600.00" route="kuf-10b_to_ka-4" end="7200.00" number="122"/>
+    <flow id ="f_94" type = "phMotor" begin="3600.00" route="kuf-10b_to_ka-6" end="7200.00" number="8"/>
+    <flow id ="f_95" type = "phCar" begin="3600.00" route="kuf-10b_to_ka-6" end="7200.00" number="6"/>
+    <flow id ="f_96" type = "phMotor" begin="3600.00" route="kuf-10c_to_ka-4" end="7200.00" number="466"/>
+    <flow id ="f_97" type = "phCar" begin="3600.00" route="kuf-10c_to_ka-4" end="7200.00" number="310"/>
+    <flow id ="f_98" type = "phMotor" begin="3600.00" route="kuf-10c_to_ka-6" end="7200.00" number="22"/>
+    <flow id ="f_99" type = "phCar" begin="3600.00" route="kuf-10c_to_ka-6" end="7200.00" number="14"/>
+    <flow id ="f_100" type = "phMotor" begin="3600.00" route="kbt-4" end="7200.00" number="34"/>
+    <flow id ="f_101" type = "phCar" begin="3600.00" route="kbt-4" end="7200.00" number="23"/>
+    <flow id ="f_102" type = "phMotor" begin="3600.00" route="kbt-4a" end="7200.00" number="316"/>
+    <flow id ="f_103" type = "phCar" begin="3600.00" route="kbt-4a" end="7200.00" number="210"/>
+    <flow id ="f_104" type = "phMotor" begin="3600.00" route="kbt-5_to_kuf-4" end="7200.00" number="97"/>
+    <flow id ="f_105" type = "phCar" begin="3600.00" route="kbt-5_to_kuf-4" end="7200.00" number="64"/>
+    <flow id ="f_106" type = "phMotor" begin="3600.00" route="kbt-5_to_kuf-4a_to_kbt-2" end="7200.00" number="2"/>
+    <flow id ="f_107" type = "phCar" begin="3600.00" route="kbt-5_to_kuf-4a_to_kbt-2" end="7200.00" number="2"/>
+    <flow id ="f_108" type = "phMotor" begin="3600.00" route="kbt-5_to_kuf-4b" end="7200.00" number="82"/>
+    <flow id ="f_109" type = "phCar" begin="3600.00" route="kbt-5_to_kuf-4b" end="7200.00" number="55"/>
+    <flow id ="f_110" type = "phMotor" begin="3600.00" route="kbt-5_to_kuf-5" end="7200.00" number="3417"/>
+    <flow id ="f_111" type = "phCar" begin="3600.00" route="kbt-5_to_kuf-5" end="7200.00" number="2278"/>
+    <flow id ="f_112" type = "phMotor" begin="3600.00" route="kbt-6" end="7200.00" number="436"/>
+    <flow id ="f_113" type = "phCar" begin="3600.00" route="kbt-6" end="7200.00" number="290"/>
+    <flow id ="f_114" type = "phMotor" begin="3600.00" route="kbt-7" end="7200.00" number="476"/>
+    <flow id ="f_115" type = "phCar" begin="3600.00" route="kbt-7" end="7200.00" number="317"/>
+    <flow id ="f_116" type = "phMotor" begin="3600.00" route="kbt-8" end="7200.00" number="10"/>
+    <flow id ="f_117" type = "phCar" begin="3600.00" route="kbt-8" end="7200.00" number="7"/>
+    <flow id ="f_118" type = "phMotor" begin="3600.00" route="kbt-9_to_kuf-4" end="7200.00" number="1"/>
+    <flow id ="f_119" type = "phMotor" begin="3600.00" route="kbt-9_to_kuf-4b" end="7200.00" number="1"/>
+    <flow id ="f_120" type = "phMotor" begin="3600.00" route="kbt-9_to_kuf-5" end="7200.00" number="22"/>
+    <flow id ="f_121" type = "phCar" begin="3600.00" route="kbt-9_to_kuf-5" end="7200.00" number="15"/>
+    <flow id ="f_122" type = "phMotor" begin="3600.00" route="kbt-10_to_kuf-4" end="7200.00" number="2"/>
+    <flow id ="f_123" type = "phCar" begin="3600.00" route="kbt-10_to_kuf-4" end="7200.00" number="2"/>
+    <flow id ="f_124" type = "phMotor" begin="3600.00" route="kbt-10_to_kuf-4b" end="7200.00" number="2"/>
+    <flow id ="f_125" type = "phCar" begin="3600.00" route="kbt-10_to_kuf-4b" end="7200.00" number="2"/>
+    <flow id ="f_126" type = "phMotor" begin="3600.00" route="kbt-10_to_kuf-5" end="7200.00" number="92"/>
+    <flow id ="f_127" type = "phCar" begin="3600.00" route="kbt-10_to_kuf-5" end="7200.00" number="61"/>
+    <flow id ="f_128" type = "phMotor" begin="3600.00" route="kbt-11" end="7200.00" number="21"/>
+    <flow id ="f_129" type = "phCar" begin="3600.00" route="kbt-11" end="7200.00" number="14"/>
+    <flow id ="f_130" type = "phMotor" begin="3600.00" route="kbt-12" end="7200.00" number="8"/>
+    <flow id ="f_131" type = "phCar" begin="3600.00" route="kbt-12" end="7200.00" number="5"/>
+    <!--6PM to 7PM-->
+    <flow id ="f_132" type = "phMotor" begin="7200.00" route="ka-1" end="10800.00" number="362"/>
+    <flow id ="f_133" type = "phCar" begin="7200.00" route="ka-1" end="10800.00" number="241"/>
+    <flow id ="f_134" type = "phMotor" begin="7200.00" route="ka-8" end="10800.00" number="1246"/>
+    <flow id ="f_135" type = "phCar" begin="7200.00" route="ka-8" end="10800.00" number="831"/>
+    <flow id ="f_136" type = "phMotor" begin="7200.00" route="ka-10" end="10800.00" number="487"/>
+    <flow id ="f_137" type = "phCar" begin="7200.00" route="ka-10" end="10800.00" number="325"/>
+    <flow id ="f_138" type = "phMotor" begin="7200.00" route="ka-11" end="10800.00" number="2002"/>
+    <flow id ="f_139" type = "phCar" begin="7200.00" route="ka-11" end="10800.00" number="1335"/>
+    <flow id ="f_140" type = "phMotor" begin="7200.00" route="ka-12_to_kuf-2" end="10800.00" number="2545"/>
+    <flow id ="f_141" type = "phCar" begin="7200.00" route="ka-12_to_kuf-2" end="10800.00" number="1696"/>
+    <flow id ="f_142" type = "phMotor" begin="7200.00" route="ka-12_to_kuf-3" end="10800.00" number="164"/>
+    <flow id ="f_143" type = "phCar" begin="7200.00" route="ka-12_to_kuf-3" end="10800.00" number="110"/>
+    <flow id ="f_144" type = "phMotor" begin="7200.00" route="ka-12_to_kuf-3a" end="10800.00" number="18"/>
+    <flow id ="f_145" type = "phCar" begin="7200.00" route="ka-12_to_kuf-3a" end="10800.00" number="12"/>
+    <flow id ="f_146" type = "phMotor" begin="7200.00" route="kuf-7_to_kbt-2" end="10800.00" number="114"/>
+    <flow id ="f_147" type = "phCar" begin="7200.00" route="kuf-7_to_kbt-2" end="10800.00" number="76"/>
+    <flow id ="f_148" type = "phMotor" begin="7200.00" route="kuf-7_to_kbt-3" end="10800.00" number="1"/>
+    <flow id ="f_149" type = "phCar" begin="7200.00" route="kuf-7_to_kbt-3" end="10800.00" number="1"/>
+    <flow id ="f_150" type = "phMotor" begin="7200.00" route="kuf-8" end="10800.00" number="68"/>
+    <flow id ="f_151" type = "phCar" begin="7200.00" route="kuf-8" end="10800.00" number="45"/>
+    <flow id ="f_152" type = "phMotor" begin="7200.00" route="kuf-8a" end="10800.00" number="66"/>
+    <flow id ="f_153" type = "phCar" begin="7200.00" route="kuf-8a" end="10800.00" number="44"/>
+    <flow id ="f_154" type = "phMotor" begin="7200.00" route="kuf-9_to_ka-4" end="10800.00" number="66"/>
+    <flow id ="f_155" type = "phCar" begin="7200.00" route="kuf-9_to_ka-4" end="10800.00" number="44"/>
+    <flow id ="f_156" type = "phMotor" begin="7200.00" route="kuf-9_to_ka-6" end="10800.00" number="3"/>
+    <flow id ="f_157" type = "phCar" begin="7200.00" route="kuf-9_to_ka-6" end="10800.00" number="2"/>
+    <flow id ="f_158" type = "phMotor" begin="7200.00" route="kuf-10b_to_ka-4" end="10800.00" number="166"/>
+    <flow id ="f_159" type = "phCar" begin="7200.00" route="kuf-10b_to_ka-4" end="10800.00" number="110"/>
+    <flow id ="f_160" type = "phMotor" begin="7200.00" route="kuf-10b_to_ka-6" end="10800.00" number="8"/>
+    <flow id ="f_161" type = "phCar" begin="7200.00" route="kuf-10b_to_ka-6" end="10800.00" number="5"/>
+    <flow id ="f_162" type = "phMotor" begin="7200.00" route="kuf-10c_to_ka-4" end="10800.00" number="422"/>
+    <flow id ="f_163" type = "phCar" begin="7200.00" route="kuf-10c_to_ka-4" end="10800.00" number="281"/>
+    <flow id ="f_164" type = "phMotor" begin="7200.00" route="kuf-10c_to_ka-6" end="10800.00" number="20"/>
+    <flow id ="f_165" type = "phCar" begin="7200.00" route="kuf-10c_to_ka-6" end="10800.00" number="13"/>
+    <flow id ="f_166" type = "phMotor" begin="7200.00" route="kbt-4" end="10800.00" number="31"/>
+    <flow id ="f_167" type = "phCar" begin="7200.00" route="kbt-4" end="10800.00" number="21"/>
+    <flow id ="f_168" type = "phMotor" begin="7200.00" route="kbt-4a" end="10800.00" number="286"/>
+    <flow id ="f_169" type = "phCar" begin="7200.00" route="kbt-4a" end="10800.00" number="191"/>
+    <flow id ="f_170" type = "phMotor" begin="7200.00" route="kbt-5_to_kuf-4" end="10800.00" number="88"/>
+    <flow id ="f_171" type = "phCar" begin="7200.00" route="kbt-5_to_kuf-4" end="10800.00" number="58"/>
+    <flow id ="f_172" type = "phMotor" begin="7200.00" route="kbt-5_to_kuf-4a_to_kbt-2" end="10800.00" number="1"/>
+    <flow id ="f_173" type = "phCar" begin="7200.00" route="kbt-5_to_kuf-4a_to_kbt-2" end="10800.00" number="1"/>
+    <flow id ="f_174" type = "phMotor" begin="7200.00" route="kbt-5_to_kuf-4a_to_kbt-3" end="10800.00" number="1"/>
+    <flow id ="f_175" type = "phCar" begin="7200.00" route="kbt-5_to_kuf-4a_to_kbt-3" end="10800.00" number="1"/>
+    <flow id ="f_176" type = "phMotor" begin="7200.00" route="kbt-5_to_kuf-4b" end="10800.00" number="75"/>
+    <flow id ="f_177" type = "phCar" begin="7200.00" route="kbt-5_to_kuf-4b" end="10800.00" number="50"/>
+    <flow id ="f_178" type = "phMotor" begin="7200.00" route="kbt-5_to_kuf-5" end="10800.00" number="3097"/>
+    <flow id ="f_179" type = "phCar" begin="7200.00" route="kbt-5_to_kuf-5" end="10800.00" number="2064"/>
+    <flow id ="f_180" type = "phMotor" begin="7200.00" route="kbt-6" end="10800.00" number="395"/>
+    <flow id ="f_181" type = "phCar" begin="7200.00" route="kbt-6" end="10800.00" number="263"/>
+    <flow id ="f_182" type = "phMotor" begin="7200.00" route="kbt-7" end="10800.00" number="431"/>
+    <flow id ="f_183" type = "phCar" begin="7200.00" route="kbt-7" end="10800.00" number="288"/>
+    <flow id ="f_184" type = "phMotor" begin="7200.00" route="kbt-8" end="10800.00" number="9"/>
+    <flow id ="f_185" type = "phCar" begin="7200.00" route="kbt-8" end="10800.00" number="6"/>
+    <flow id ="f_186" type = "phMotor" begin="7200.00" route="kbt-9_to_kuf-4" end="10800.00" number="1"/>
+    <flow id ="f_187" type = "phMotor" begin="7200.00" route="kbt-9_to_kuf-4b" end="10800.00" number="1"/>
+    <flow id ="f_188" type = "phMotor" begin="7200.00" route="kbt-9_to_kuf-5" end="10800.00" number="20"/>
+    <flow id ="f_189" type = "phCar" begin="7200.00" route="kbt-9_to_kuf-5" end="10800.00" number="13"/>
+    <flow id ="f_190" type = "phMotor" begin="7200.00" route="kbt-10_to_kuf-4" end="10800.00" number="2"/>
+    <flow id ="f_191" type = "phCar" begin="7200.00" route="kbt-10_to_kuf-4" end="10800.00" number="2"/>
+    <flow id ="f_192" type = "phMotor" begin="7200.00" route="kbt-10_to_kuf-4b" end="10800.00" number="2"/>
+    <flow id ="f_193" type = "phCar" begin="7200.00" route="kbt-10_to_kuf-4b" end="10800.00" number="1"/>
+    <flow id ="f_194" type = "phMotor" begin="7200.00" route="kbt-10_to_kuf-5" end="10800.00" number="83"/>
+    <flow id ="f_195" type = "phCar" begin="7200.00" route="kbt-10_to_kuf-5" end="10800.00" number="56"/>
+    <flow id ="f_196" type = "phMotor" begin="7200.00" route="kbt-11" end="10800.00" number="19"/>
+    <flow id ="f_197" type = "phCar" begin="7200.00" route="kbt-11" end="10800.00" number="13"/>
+    <flow id ="f_198" type = "phMotor" begin="7200.00" route="kbt-12" end="10800.00" number="7"/>
+    <flow id ="f_199" type = "phCar" begin="7200.00" route="kbt-12" end="10800.00" number="5"/>
+    <!--7PM to 8PM-->
+    <flow id ="f_200" type = "phMotor" begin="10800.00" route="ka-1" end="14400.00" number="323"/>
+    <flow id ="f_201" type = "phCar" begin="10800.00" route="ka-1" end="14400.00" number="216"/>
+    <flow id ="f_202" type = "phMotor" begin="10800.00" route="ka-8" end="14400.00" number="1114"/>
+    <flow id ="f_203" type = "phCar" begin="10800.00" route="ka-8" end="14400.00" number="743"/>
+    <flow id ="f_204" type = "phMotor" begin="10800.00" route="ka-10" end="14400.00" number="436"/>
+    <flow id ="f_205" type = "phCar" begin="10800.00" route="ka-10" end="14400.00" number="290"/>
+    <flow id ="f_206" type = "phMotor" begin="10800.00" route="ka-11" end="14400.00" number="1790"/>
+    <flow id ="f_207" type = "phCar" begin="10800.00" route="ka-11" end="14400.00" number="1193"/>
+    <flow id ="f_208" type = "phMotor" begin="10800.00" route="ka-12_to_kuf-2" end="14400.00" number="2275"/>
+    <flow id ="f_209" type = "phCar" begin="10800.00" route="ka-12_to_kuf-2" end="14400.00" number="1517"/>
+    <flow id ="f_210" type = "phMotor" begin="10800.00" route="ka-12_to_kuf-3" end="14400.00" number="147"/>
+    <flow id ="f_211" type = "phCar" begin="10800.00" route="ka-12_to_kuf-3" end="14400.00" number="98"/>
+    <flow id ="f_212" type = "phMotor" begin="10800.00" route="ka-12_to_kuf-3a" end="14400.00" number="16"/>
+    <flow id ="f_213" type = "phCar" begin="10800.00" route="ka-12_to_kuf-3a" end="14400.00" number="11"/>
+    <flow id ="f_214" type = "phMotor" begin="10800.00" route="kuf-7_to_kbt-2" end="14400.00" number="101"/>
+    <flow id ="f_215" type = "phCar" begin="10800.00" route="kuf-7_to_kbt-2" end="14400.00" number="68"/>
+    <flow id ="f_216" type = "phMotor" begin="10800.00" route="kuf-7_to_kbt-3" end="14400.00" number="1"/>
+    <flow id ="f_217" type = "phCar" begin="10800.00" route="kuf-7_to_kbt-3" end="14400.00" number="1"/>
+    <flow id ="f_218" type = "phMotor" begin="10800.00" route="kuf-8" end="14400.00" number="61"/>
+    <flow id ="f_219" type = "phCar" begin="10800.00" route="kuf-8" end="14400.00" number="40"/>
+    <flow id ="f_220" type = "phMotor" begin="10800.00" route="kuf-8a" end="14400.00" number="59"/>
+    <flow id ="f_221" type = "phCar" begin="10800.00" route="kuf-8a" end="14400.00" number="40"/>
+    <flow id ="f_222" type = "phMotor" begin="10800.00" route="kuf-9_to_ka-4" end="14400.00" number="59"/>
+    <flow id ="f_223" type = "phCar" begin="10800.00" route="kuf-9_to_ka-4" end="14400.00" number="39"/>
+    <flow id ="f_224" type = "phMotor" begin="10800.00" route="kuf-9_to_ka-6" end="14400.00" number="3"/>
+    <flow id ="f_225" type = "phCar" begin="10800.00" route="kuf-9_to_ka-6" end="14400.00" number="2"/>
+    <flow id ="f_226" type = "phMotor" begin="10800.00" route="kuf-10b_to_ka-4" end="14400.00" number="148"/>
+    <flow id ="f_227" type = "phCar" begin="10800.00" route="kuf-10b_to_ka-4" end="14400.00" number="99"/>
+    <flow id ="f_228" type = "phMotor" begin="10800.00" route="kuf-10b_to_ka-6" end="14400.00" number="7"/>
+    <flow id ="f_229" type = "phCar" begin="10800.00" route="kuf-10b_to_ka-6" end="14400.00" number="4"/>
+    <flow id ="f_230" type = "phMotor" begin="10800.00" route="kuf-10c_to_ka-4" end="14400.00" number="377"/>
+    <flow id ="f_231" type = "phCar" begin="10800.00" route="kuf-10c_to_ka-4" end="14400.00" number="252"/>
+    <flow id ="f_232" type = "phMotor" begin="10800.00" route="kuf-10c_to_ka-6" end="14400.00" number="17"/>
+    <flow id ="f_233" type = "phCar" begin="10800.00" route="kuf-10c_to_ka-6" end="14400.00" number="12"/>
+    <flow id ="f_234" type = "phMotor" begin="10800.00" route="kbt-4" end="14400.00" number="28"/>
+    <flow id ="f_235" type = "phCar" begin="10800.00" route="kbt-4" end="14400.00" number="18"/>
+    <flow id ="f_236" type = "phMotor" begin="10800.00" route="kbt-4a" end="14400.00" number="256"/>
+    <flow id ="f_237" type = "phCar" begin="10800.00" route="kbt-4a" end="14400.00" number="171"/>
+    <flow id ="f_238" type = "phMotor" begin="10800.00" route="kbt-5_to_kuf-4" end="14400.00" number="79"/>
+    <flow id ="f_239" type = "phCar" begin="10800.00" route="kbt-5_to_kuf-4" end="14400.00" number="52"/>
+    <flow id ="f_240" type = "phMotor" begin="10800.00" route="kbt-5_to_kuf-4a_to_kbt-2" end="14400.00" number="1"/>
+    <flow id ="f_241" type = "phMotor" begin="10800.00" route="kbt-5_to_kuf-4a_to_kbt-3" end="14400.00" number="2"/>
+    <flow id ="f_242" type = "phCar" begin="10800.00" route="kbt-5_to_kuf-4a_to_kbt-3" end="14400.00" number="1"/>
+    <flow id ="f_243" type = "phMotor" begin="10800.00" route="kbt-5_to_kuf-4b" end="14400.00" number="67"/>
+    <flow id ="f_244" type = "phCar" begin="10800.00" route="kbt-5_to_kuf-4b" end="14400.00" number="44"/>
+    <flow id ="f_245" type = "phMotor" begin="10800.00" route="kbt-5_to_kuf-5" end="14400.00" number="2768"/>
+    <flow id ="f_246" type = "phCar" begin="10800.00" route="kbt-5_to_kuf-5" end="14400.00" number="1846"/>
+    <flow id ="f_247" type = "phMotor" begin="10800.00" route="kbt-6" end="14400.00" number="353"/>
+    <flow id ="f_248" type = "phCar" begin="10800.00" route="kbt-6" end="14400.00" number="235"/>
+    <flow id ="f_249" type = "phMotor" begin="10800.00" route="kbt-7" end="14400.00" number="386"/>
+    <flow id ="f_250" type = "phCar" begin="10800.00" route="kbt-7" end="14400.00" number="257"/>
+    <flow id ="f_251" type = "phMotor" begin="10800.00" route="kbt-8" end="14400.00" number="8"/>
+    <flow id ="f_252" type = "phCar" begin="10800.00" route="kbt-8" end="14400.00" number="5"/>
+    <flow id ="f_253" type = "phMotor" begin="10800.00" route="kbt-9_to_kuf-4" end="14400.00" number="1"/>
+    <flow id ="f_254" type = "phMotor" begin="10800.00" route="kbt-9_to_kuf-4b" end="14400.00" number="1"/>
+    <flow id ="f_255" type = "phMotor" begin="10800.00" route="kbt-9_to_kuf-5" end="14400.00" number="17"/>
+    <flow id ="f_256" type = "phCar" begin="10800.00" route="kbt-9_to_kuf-5" end="14400.00" number="12"/>
+    <flow id ="f_257" type = "phMotor" begin="10800.00" route="kbt-10_to_kuf-4" end="14400.00" number="2"/>
+    <flow id ="f_258" type = "phCar" begin="10800.00" route="kbt-10_to_kuf-4" end="14400.00" number="1"/>
+    <flow id ="f_259" type = "phMotor" begin="10800.00" route="kbt-10_to_kuf-4b" end="14400.00" number="2"/>
+    <flow id ="f_260" type = "phCar" begin="10800.00" route="kbt-10_to_kuf-4b" end="14400.00" number="1"/>
+    <flow id ="f_261" type = "phMotor" begin="10800.00" route="kbt-10_to_kuf-5" end="14400.00" number="74"/>
+    <flow id ="f_262" type = "phCar" begin="10800.00" route="kbt-10_to_kuf-5" end="14400.00" number="49"/>
+    <flow id ="f_263" type = "phMotor" begin="10800.00" route="kbt-11" end="14400.00" number="17"/>
+    <flow id ="f_264" type = "phCar" begin="10800.00" route="kbt-11" end="14400.00" number="11"/>
+    <flow id ="f_265" type = "phMotor" begin="10800.00" route="kbt-12" end="14400.00" number="6"/>
+    <flow id ="f_266" type = "phCar" begin="10800.00" route="kbt-12" end="14400.00" number="4"/>
+</routes>

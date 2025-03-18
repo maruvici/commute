@@ -22,7 +22,12 @@ class Intermediate:
         return self.possible_sources
 
 count = 0
-def createXML_hourly_profiled(dic, idx):
+def createXML_fourhour_profiled(dic, idx, adj):
+    '''
+    Function to create xml entries for .flows file. 
+    Create flows for route dictionary dic at hour idx. 
+    Uses adj to adjust sim start time to 0 and end at 14400.
+    '''
     global count
     xml_entries = []
     #assume ratio between motorcycles to cars is  3:2
@@ -31,9 +36,9 @@ def createXML_hourly_profiled(dic, idx):
     for key in dic:
         motor_count = int(round(dic[key] * 0.6))
         car_count = int(round(dic[key] * 0.4))
-        xml_entry_motor = '<flow id ="f_' + str(count) +'"' + ' type = "phMotor" begin="'  + str(start_end_times[idx - 5][0]) + '0" route="' + str(key) + '" end="'+ str(start_end_times[idx - 5][1]) + '0" number="'+ str(motor_count) +'"'+' departLane="free" departSpeed="max"'+'/>' 
+        xml_entry_motor = '<flow id ="f_' + str(count) +'"' + ' type = "phMotor" begin="'  + str(start_end_times[idx-adj][0]) + '0" route="' + str(key) + '" end="'+ str(start_end_times[idx-adj][1]) + '0" number="'+ str(motor_count) +'"/>' 
         count = count + 1
-        xml_entry_car = '<flow id ="f_' + str(count) +'"' + ' type = "phCar" begin="'  + str(start_end_times[idx - 5][0]) + '0" route="' + str(key) + '" end="'+ str(start_end_times[idx - 5][1]) + '0" number="'+ str(car_count) +'"'+' departLane="free" departSpeed="max"'+'/>' 
+        xml_entry_car = '<flow id ="f_' + str(count) +'"' + ' type = "phCar" begin="'  + str(start_end_times[idx-adj][0]) + '0" route="' + str(key) + '" end="'+ str(start_end_times[idx-adj][1]) + '0" number="'+ str(car_count) +'"/>'  
         count = count + 1
         if motor_count != 0:
             xml_entries.append(xml_entry_motor)
@@ -47,14 +52,48 @@ def createXML_hourly_profiled(dic, idx):
     for entry in xml_entries:
         print(entry)
         pass
-
     return
+
+def createXML_hourly_profiled(dic, idx):
+    '''
+    Function to create xml entries for .flows file. 
+    Create flows for route dictionary dic at hour idx. 
+    Stars and ends simulation time according to idx
+    '''
+    global count
+    xml_entries = []
+    #assume ratio between motorcycles to cars is  3:2
+    start_end_times = [('0.0', '3600.0'), ('3600.0', '7200.0'), ('7200.0', '10800.0'), ('10800.0', '14400.0'), ('14400.0', '18000.0'), ('18000.0', '21600.0'), ('21600.0', '25200.0'), ('25200.0', '28800.0'), ('28800.0', '32400.0'), ('32400.0', '36000.0'), ('36000.0', '39600.0'), ('39600.0', '43200.0'), ('43200.0', '46800.0'), ('46800.0', '50400.0')]
+    for key in dic:
+        motor_count = int(round(dic[key] * 0.6))
+        car_count = int(round(dic[key] * 0.4))
+        xml_entry_motor = '<flow id ="f_' + str(count) +'"' + ' type = "phMotor" begin="'  + str(start_end_times[idx][0]) + '0" route="' + str(key) + '" end="'+ str(start_end_times[idx][1]) + '0" number="'+ str(motor_count) +'"/>' 
+        count = count + 1
+        xml_entry_car = '<flow id ="f_' + str(count) +'"' + ' type = "phCar" begin="'  + str(start_end_times[idx][0]) + '0" route="' + str(key) + '" end="'+ str(start_end_times[idx][1]) + '0" number="'+ str(car_count) +'"/>'  
+        count = count + 1
+        if motor_count != 0:
+            xml_entries.append(xml_entry_motor)
+        else:
+            count = count - 1
+        if car_count != 0:
+            xml_entries.append(xml_entry_car)
+        else:
+            count = count - 1
+    for entry in xml_entries:
+        print(entry)
+        pass
+    return
+
 def createXML_wholeday_profiled(dic):
+    '''
+    Function to create xml entries for .flows file. 
+    Create flows for route dictionary dic from 6am to 8pm
+    '''
     count = 0
     xml_entries = []
     #assume ratio between motorcycles to cars is  3:2
     start_end_times = [('0.0', '3600.0'), ('3600.0', '7200.0'), ('7200.0', '10800.0'), ('10800.0', '14400.0'), ('14400.0', '18000.0'), ('18000.0', '21600.0'), ('21600.0', '25200.0'), ('25200.0', '28800.0'), ('28800.0', '32400.0'), ('32400.0', '36000.0'), ('36000.0', '39600.0'), ('39600.0', '43200.0'), ('43200.0', '46800.0'), ('46800.0', '50400.0')]
-    for idx in range (4):
+    for idx in range (14):
         for key in dic:
             motor_count = int(round(dic[key] * 0.6))
             car_count = int(round(dic[key] * 0.4))
@@ -70,16 +109,12 @@ def createXML_wholeday_profiled(dic):
                 xml_entries.append(xml_entry_car)
             else:
                 count = count - 1
-
     for entry in xml_entries:
         print(entry)
         pass
-
     return
 
-
 def distribute(time_slot):
-
     for source_node in sources:
         sum_out_src = 0
         demand_sum = 0
@@ -214,9 +249,6 @@ intermediates = [ka4, ka6, kuf2, kuf3, kuf3a, kuf4, kuf4a_kbt2, kuf4a_kbt3, kuf4
 route_dict = {}
 route_name_list=[]
 
-#distribute(0)
-#createXML_hourly_profiled(route_dict, 0)
-
 def sum_indices(dictionary):
     # Initialize a list to store sums for each index
     sums = [0] * 14
@@ -234,10 +266,10 @@ for idx in range(14):
    #swank = sum_indices(route_dict)
    #print(swank)
 
-   #createXML_hourly_profiled(route_dict, idx)
+   createXML_hourly_profiled(route_dict, idx)
+   #createXML_fourhour_profiled(route_dict, idx, 4)
    #print(route_dict)
    #print(sum(route_dict.values()))
 
-createXML_wholeday_profiled(route_dict)
-#print
+#createXML_wholeday_profiled(route_dict)
 
