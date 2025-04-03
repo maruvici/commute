@@ -440,20 +440,7 @@ def Restore_Original_State():
     
  
 
-def target_function(train_greentime):
-    # Standardize the input data
-    mu = train_greentime.mean()
-    sigma = train_greentime.std()
-    std_train_greentime = (train_greentime - mu) / sigma
-    Evaluate_Busy(train_greentime)
-    global Cars_Passed
-    try:
-        flow_rate = (Cars_Passed.item() / std_train_greentime) + (std_train_greentime/100)
-    except:
-        flow_rate = (Cars_Passed / std_train_greentime) + (std_train_greentime/100)
-    #print("Total Flow Rate:" + str(flow_rate))
-    Cars_Passed = 0
-    return flow_rate.unsqueeze(-1)
+
 
 car_num_list = []
 def Save_Original_State():
@@ -769,7 +756,7 @@ def run():
 
             vehicle_count_dict = getLaneParams()
             print(f"XANNNN")
-            print(vehicle_count_dict)
+            #print(vehicle_count_dict)
             kuf_phase_name = traci.trafficlight.getPhaseName("kuf")
             print(f"kuf_phase_name is: " + kuf_phase_name)
             print(f"calling helper function now!")
