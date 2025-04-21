@@ -20,7 +20,7 @@
 
     <time>
         <!-- max-depart-delay value="300"/ -->
-        <!-- step-length value="0.5"/ -->
+        <step-length value="0.5"/>
     </time>
 
     <processing>
