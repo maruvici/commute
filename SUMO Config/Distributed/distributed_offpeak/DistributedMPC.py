@@ -937,7 +937,7 @@ if __name__ == "__main__":
     results_folder = os.path.join("results", timestamp)
     os.makedirs(results_folder, exist_ok=True)
 
-    # modify osm.sumocfg outputs
+    # create a temp osm.sumocfg with timestamped outputs
     original_config = "osm.sumocfg"
     temp_config = f"osm_temp_{timestamp}.sumocfg"
 
@@ -951,6 +951,40 @@ if __name__ == "__main__":
                 basename = os.path.basename(filename)
                 name, ext = os.path.splitext(basename)
                 child.attrib['value'] = os.path.join(results_folder, f"{name}_{timestamp}{ext}")
+    
+    # create a temp detector.add.xml with timestamped outputs
+    original_detector = "detector.add.xml"
+    temp_detector = f"detector_temp_{timestamp}.add.xml"
+
+    tree_det = ET.parse(original_detector)
+    root_det = tree_det.getroot()
+
+    for timedEvent in root_det.findall("timedEvent"):
+        if "dest" in timedEvent.attrib:
+            old_dest = timedEvent.attrib["dest"]
+            name, ext = os.path.splitext(old_dest)
+            new_dest = os.path.join(results_folder, f"{name}_{timestamp}{ext}")
+            timedEvent.attrib["dest"] = new_dest
+    
+    for tag in ["laneAreaDetector", "inductionLoop"]:
+        for elem in root_det.findall(tag):
+            if "file" in elem.attrib:
+                old_file = elem.attrib["file"]
+                name, ext = os.path.splitext(old_file)
+                new_file = os.path.join(results_folder, f"{name}_{timestamp}{ext}")
+                elem.attrib["file"] = new_file
+
+    tree_det.write(temp_detector)
+
+    # modify temp osm.sumocfg's reference to use the temp detector
+    for add in root.iter("additional-files"):
+        if "value" in add.attrib:
+            files = [f.strip() for f in add.attrib["value"].split(',')]
+            updated_files = [
+                temp_detector if f == "detector.add.xml" else f for f in files
+            ]
+            add.attrib["value"] = ",".join(updated_files)
+
 
     tree.write(temp_config)
 
@@ -971,6 +1005,9 @@ if __name__ == "__main__":
         warnings.filterwarnings('ignore')
         run()
 
-    # cleanup temp config after simulation
+    # cleanup temp config and detector after simulation
     if os.path.exists(temp_config):
         os.remove(temp_config)
+
+    if os.path.exists(temp_detector):
+        os.remove(temp_detector)
