@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-05-10 08:01:42 by Eclipse SUMO sumo Version 1.20.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="map.net.xml"/>
+        <route-files value="demand.rou.off.xml"/>
+        <additional-files value="add.xml"/>
+    </input>
+
+    <output>
+        <summary-output value="summary_out.xml"/>
+        <tripinfo-output value="tripinfo.xml"/>
+        <statistic-output value="statistic_out.xml"/>
+    </output>
+
+    <time>
+        <step-length value="0.5"/>
+    </time>
+
+    <processing>
+        <lateral-resolution value="0.2"/>
+        <ignore-junction-blocker value="300"/>
+        <collision.action value="none"/>
+    </processing>
+
+    <traci_server>
+        <remote-port value="54096"/>
+    </traci_server>
+
+</configuration>
+-->
+
+<statistics xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/statistic_file.xsd">
+    <performance clockBegin="148753.14" clockEnd="151554.27" clockDuration="2801.14" traciDuration="2001.32" realTimeFactor="5.45" vehicleUpdatesPerSecond="7448.29" personUpdatesPerSecond="0.00" begin="0.00" end="15269.00" duration="15269.00"/>
+    <vehicles loaded="62186" inserted="62186" running="0" waiting="0"/>
+    <teleports total="9" jam="0" yield="9" wrongLane="0"/>
+    <safety collisions="0" emergencyStops="0" emergencyBraking="0"/>
+    <persons loaded="0" running="0" jammed="0"/>
+    <personTeleports total="0" abortWait="0" wrongDest="0"/>
+    <vehicleTripStatistics count="62186" routeLength="945.98" speed="7.96" duration="167.75" waitingTime="77.58" timeLoss="98.89" departDelay="0.41" departDelayWaiting="-1.00" totalTravelTime="10431846.50" totalDepartDelay="25858.88"/>
+    <pedestrianStatistics number="0" routeLength="0.00" duration="0.00" timeLoss="0.00"/>
+    <rideStatistics number="0"/>
+    <transportStatistics number="0"/>
+</statistics>

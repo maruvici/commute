@@ -1,0 +1,905 @@
+Simulation 1
+Timestamp pcresults_may10
+Hour 1: 16048
+Hour 2: 15048
+Hour 3: 14714
+Hour 4: 16305
+Hour 5: 11
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62115
+
+Simulation 2
+Timestamp pcresults_may10_2
+Hour 1: 16047
+Hour 2: 15056
+Hour 3: 14703
+Hour 4: 16320
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 3
+Timestamp pcresults_may10_3
+Hour 1: 16047
+Hour 2: 15050
+Hour 3: 14709
+Hour 4: 16320
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 4
+Timestamp pcresults_may10_4
+Hour 1: 16036
+Hour 2: 15069
+Hour 3: 14707
+Hour 4: 16290
+Hour 5: 24
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62102
+
+Simulation 5
+Timestamp pcresults_may11
+Hour 1: 16049
+Hour 2: 15054
+Hour 3: 14708
+Hour 4: 16298
+Hour 5: 17
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62109
+
+Simulation 6
+Timestamp pcresults_may11_2
+Hour 1: 16041
+Hour 2: 15062
+Hour 3: 14703
+Hour 4: 16320
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 7
+Timestamp pcresults_may11_3
+Hour 1: 16049
+Hour 2: 15054
+Hour 3: 14706
+Hour 4: 16304
+Hour 5: 13
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62113
+
+Simulation 8
+Timestamp pcresults_may11_4
+Hour 1: 16052
+Hour 2: 15051
+Hour 3: 14702
+Hour 4: 16321
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 9
+Timestamp pcresults_may11_5
+Hour 1: 16043
+Hour 2: 15059
+Hour 3: 14705
+Hour 4: 16319
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 10
+Timestamp pcresults_may11_6
+Hour 1: 16028
+Hour 2: 15071
+Hour 3: 14710
+Hour 4: 16317
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 11
+Timestamp pcresults_may11_7
+Hour 1: 16051
+Hour 2: 15052
+Hour 3: 14700
+Hour 4: 16320
+Hour 5: 3
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62123
+
+Simulation 12
+Timestamp pcresults_may11_8
+Hour 1: 16047
+Hour 2: 15056
+Hour 3: 14709
+Hour 4: 16314
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 13
+Timestamp pcresults_may12
+Hour 1: 16041
+Hour 2: 15062
+Hour 3: 14703
+Hour 4: 16320
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 14
+Timestamp pcresults_may12_2
+Hour 1: 15998
+Hour 2: 15102
+Hour 3: 14706
+Hour 4: 16320
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 15
+Timestamp pcresults_may12_3
+Hour 1: 16049
+Hour 2: 15051
+Hour 3: 14710
+Hour 4: 16316
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 16
+Timestamp pcresults_may12_4
+Hour 1: 16042
+Hour 2: 15059
+Hour 3: 14704
+Hour 4: 16321
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 17
+Timestamp pcresults_may12_5
+Hour 1: 16047
+Hour 2: 15055
+Hour 3: 14708
+Hour 4: 16313
+Hour 5: 3
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62123
+
+Simulation 18
+Timestamp pcresults_may12_6
+Hour 1: 16048
+Hour 2: 15055
+Hour 3: 14708
+Hour 4: 16315
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 19
+Timestamp results_may09
+Hour 1: 16045
+Hour 2: 15062
+Hour 3: 14703
+Hour 4: 16243
+Hour 5: 74
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62053
+
+Simulation 20
+Timestamp results_may09_2
+Hour 1: 16051
+Hour 2: 15052
+Hour 3: 14706
+Hour 4: 16317
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 21
+Timestamp results_may09_3
+Hour 1: 16047
+Hour 2: 15054
+Hour 3: 14710
+Hour 4: 16315
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 22
+Timestamp results_may09_4
+Hour 1: 16049
+Hour 2: 15054
+Hour 3: 14709
+Hour 4: 16314
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 23
+Timestamp results_may10
+Hour 1: 16030
+Hour 2: 15070
+Hour 3: 14711
+Hour 4: 16315
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 24
+Timestamp results_may10_2
+Hour 1: 16041
+Hour 2: 15062
+Hour 3: 14706
+Hour 4: 16317
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 25
+Timestamp results_may10_3
+Hour 1: 16050
+Hour 2: 15047
+Hour 3: 14711
+Hour 4: 16318
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 26
+Timestamp results_may10_4
+Hour 1: 16044
+Hour 2: 15055
+Hour 3: 14712
+Hour 4: 16315
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 27
+Timestamp results_may10_5
+Hour 1: 16049
+Hour 2: 15057
+Hour 3: 14697
+Hour 4: 16323
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 28
+Timestamp results_may10_6
+Hour 1: 16049
+Hour 2: 15054
+Hour 3: 14702
+Hour 4: 16314
+Hour 5: 7
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62119
+
+Simulation 29
+Timestamp results_may11
+Hour 1: 16046
+Hour 2: 15057
+Hour 3: 14708
+Hour 4: 16315
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 30
+Timestamp results_may11_2
+Hour 1: 16050
+Hour 2: 15047
+Hour 3: 14709
+Hour 4: 16320
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 31
+Timestamp results_may11_3
+Hour 1: 16046
+Hour 2: 15053
+Hour 3: 14713
+Hour 4: 16308
+Hour 5: 6
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62120
+
+Simulation 32
+Timestamp results_may11_4
+Hour 1: 16042
+Hour 2: 15062
+Hour 3: 14707
+Hour 4: 16315
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 33
+Timestamp results_may11_5
+Hour 1: 16049
+Hour 2: 15057
+Hour 3: 14700
+Hour 4: 16320
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 34
+Timestamp results_may11_6
+Hour 1: 16052
+Hour 2: 15054
+Hour 3: 14705
+Hour 4: 16315
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 35
+Timestamp results_may11_7
+Hour 1: 16044
+Hour 2: 15053
+Hour 3: 14715
+Hour 4: 16314
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 36
+Timestamp results_may12
+Hour 1: 16051
+Hour 2: 15052
+Hour 3: 14709
+Hour 4: 16314
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 37
+Timestamp results_may12_2
+Hour 1: 16049
+Hour 2: 15054
+Hour 3: 14709
+Hour 4: 16314
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 38
+Timestamp results_may12_3
+Hour 1: 16052
+Hour 2: 15051
+Hour 3: 14709
+Hour 4: 16314
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 39
+Timestamp results_may12_4
+Hour 1: 16043
+Hour 2: 15063
+Hour 3: 14700
+Hour 4: 16320
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 40
+Timestamp results_may12_5
+Hour 1: 16049
+Hour 2: 15054
+Hour 3: 14703
+Hour 4: 16317
+Hour 5: 3
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62123
+
+Simulation 41
+Timestamp results_may12_6
+Hour 1: 16047
+Hour 2: 15056
+Hour 3: 14700
+Hour 4: 16323
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 42
+Timestamp results_may12_7
+Hour 1: 16044
+Hour 2: 15053
+Hour 3: 14714
+Hour 4: 16315
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 43
+Timestamp results_may12_8
+Hour 1: 16045
+Hour 2: 15059
+Hour 3: 14708
+Hour 4: 16314
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 44
+Timestamp results_may12_9
+Hour 1: 16049
+Hour 2: 15054
+Hour 3: 14706
+Hour 4: 16317
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 45
+Timestamp results_may13
+Hour 1: 16049
+Hour 2: 15056
+Hour 3: 14706
+Hour 4: 16315
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 46
+Timestamp results_may13_2
+Hour 1: 16047
+Hour 2: 15058
+Hour 3: 14707
+Hour 4: 16314
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 47
+Timestamp results_may13_3
+Hour 1: 16052
+Hour 2: 15051
+Hour 3: 14707
+Hour 4: 16316
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 48
+Timestamp results_may13_4
+Hour 1: 16049
+Hour 2: 15057
+Hour 3: 14705
+Hour 4: 16315
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Simulation 49
+Timestamp results_may13_5
+Hour 1: 16035
+Hour 2: 15062
+Hour 3: 14712
+Hour 4: 16316
+Hour 5: 1
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62125
+
+Simulation 50
+Timestamp results_may13_6
+Hour 1: 16041
+Hour 2: 15062
+Hour 3: 14709
+Hour 4: 16314
+Hour 5: 0
+Hour 6: 0
+Hour 7: 0
+Hour 8: 0
+Hour 9: 0
+Hour 10: 0
+Hour 11: 0
+Hour 12: 0
+Hour 13: 0
+Hour 14: 0
+Total demand (Hour 1–4): 62126
+
+Average demand Hour 1: 16044.98
+Average demand Hour 2: 15057.16
+Average demand Hour 3: 14706.86
+Average demand Hour 4: 16313.78
+Average total demand (Hour 1–4) across all simulations: 62122.78

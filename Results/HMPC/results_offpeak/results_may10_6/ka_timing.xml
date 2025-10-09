@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-05-10 22:13:49 by Eclipse SUMO sumo Version 1.20.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="map.net.xml"/>
+        <route-files value="demand.rou.off.xml"/>
+        <additional-files value="add.xml"/>
+    </input>
+
+    <output>
+        <summary-output value="summary_out.xml"/>
+        <tripinfo-output value="tripinfo.xml"/>
+        <statistic-output value="statistic_out.xml"/>
+    </output>
+
+    <time>
+        <step-length value="0.5"/>
+    </time>
+
+    <processing>
+        <lateral-resolution value="0.2"/>
+        <ignore-junction-blocker value="300"/>
+        <collision.action value="none"/>
+    </processing>
+
+    <traci_server>
+        <remote-port value="50982"/>
+    </traci_server>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <tlLogic id="ka" type="static" programID="0">
+        <phase duration="60.00" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="75.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="89.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="28.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="39.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="44.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="74.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="78.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="61.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="50.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="78.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="75.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="60.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="90.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="71.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="75.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="80.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="36.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="85.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="69.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="25.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="49.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="75.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="90.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="52.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="75.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="46.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="52.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="45.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="30.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="28.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="80.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="36.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="90.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="75.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="69.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="30.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="55.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="63.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="40.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="25.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="30.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="25.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="89.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="69.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="42.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="51.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="75.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="45.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="58.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="86.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="30.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="75.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="30.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="37.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="75.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="54.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="35.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="79.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="75.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="26.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="59.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="25.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="44.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="25.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="73.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="44.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="88.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="25.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="58.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="31.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="36.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="90.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="27.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="90.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="63.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="69.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="30.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="36.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="90.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="68.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="85.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="74.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="62.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="53.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="75.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="34.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="90.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="25.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="72.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="38.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="32.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="37.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="59.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="30.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="77.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="45.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="40.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="90.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="26.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="55.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="45.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="68.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="90.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="74.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="27.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="59.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="65.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="34.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="75.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="75.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="63.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="59.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="48.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="75.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="40.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="65.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="66.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="90.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="49.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="88.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="45.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="75.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="51.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="49.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="75.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="30.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="38.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="70.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="75.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="69.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="90.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="57.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="70.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="90.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="75.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="50.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="89.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="75.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="79.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="46.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="53.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="75.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="26.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="66.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="49.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="59.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="50.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="90.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="33.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="25.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="89.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="29.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="36.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="44.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="75.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="90.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="75.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="52.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="62.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="70.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="30.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="75.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="63.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="44.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="59.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="53.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="25.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="49.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="75.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="75.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="30.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="33.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="67.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="69.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="75.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="60.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="44.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="75.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="89.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="75.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="59.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="45.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="62.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="78.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="75.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="40.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="82.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="33.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="71.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="38.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="35.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="77.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="31.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="34.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="34.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="30.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="82.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="61.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="50.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="90.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="38.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="69.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="25.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="75.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="25.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="25.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="25.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+        <phase duration="25.50" state="gggggrgrrrggggrr" name="phase 1 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyryrrryyyyrr" name="phase 1 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 1 - ka - red"/>
+        <phase duration="25.50" state="ggrrrrrrggrrrrgg" name="phase 2 - ka - green"/>
+        <phase duration="3.00"  state="yyrrrrrryyrrrryy" name="phase 2 - ka - yellow"/>
+        <phase duration="4.00"  state="rrrrrrrrrrrrrrrr" name="phase 2 - ka - red"/>
+        <phase duration="25.50" state="ggggggggrrrrrrrr" name="phase 3 - ka - green"/>
+        <phase duration="3.00"  state="yyyyyyyyrrrrrrrr" name="phase 3 - ka- yellow"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrrrrr" name="phase 3 - ka - red"/>
+    </tlLogic>
+</additional>
